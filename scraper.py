@@ -350,32 +350,29 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-class RetinaLogoEngine:
+class LogoDevHDPlusEngine:
     def __init__(self):
         self.session = requests.Session()
-        # Kendimizi iPhone 15 Pro gibi tanıtıyoruz ki en kaliteli 'apple-touch-icon'u versinler.
+        # En kaliteli Retina ikonları çekmek için iPhone 15 Pro simülasyonu
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1'
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1'
         }
 
-    def get_high_res_from_html(self, domain):
-        """Web sitesinin HTML kodlarından en büyük ikonu bulur."""
+    def get_apple_icon_fallback(self, domain):
+        """Eğer Logo.dev başarısız olursa sitenin içindeki Apple ikonunu arar."""
         try:
             url = f"https://www.{domain}"
-            res = self.session.get(url, headers=self.headers, timeout=12)
+            res = self.session.get(url, headers=self.headers, timeout=10)
             soup = BeautifulSoup(res.text, 'html.parser')
             
-            # HTML içindeki tüm ikon etiketlerini topla
-            icons = soup.find_all("link", rel=re.compile(r"icon|apple-touch-icon", re.I))
-            
+            # En büyük ikonu bul
+            icons = soup.find_all("link", rel=re.compile(r"apple-touch-icon|icon", re.I))
             best_href = None
             max_size = 0
 
             for icon in icons:
                 href = icon.get('href')
                 sizes = icon.get('sizes', '0x0').lower()
-                
-                # Boyut analizi (Örn: 180x180)
                 current_size = int(sizes.split('x')[0]) if 'x' in sizes else 0
                 
                 if current_size > max_size:
@@ -393,22 +390,24 @@ class RetinaLogoEngine:
         return None
 
     def fetch_logo(self, domain, path):
-        # Kaynakları kaliteden düşüğe sıralıyoruz
-        html_icon = self.get_high_res_from_html(domain)
-        
-        sources = []
-        if html_icon: sources.append(html_icon)
-        sources.extend([
+        # ÖNCELİK SIRALAMASI
+        sources = [
+            # 1. Logo.dev (Ana Kaynak - 512px)
             f"https://img.logo.dev/{domain}?size=512",
-            f"https://logo.clearbit.com/{domain}?size=512",
-            f"https://www.google.com/s2/favicons?domain={domain}&sz=256"
-        ])
+            
+            # 2. HTML Apple Touch Icon (İkinci en kaliteli kaynak)
+            self.get_apple_icon_fallback(domain),
+            
+            # 3. Clearbit (Yedek - 512px)
+            f"https://logo.clearbit.com/{domain}?size=512"
+        ]
 
         for url in sources:
+            if not url: continue
             try:
                 res = self.session.get(url, headers=self.headers, timeout=10)
-                # KALİTE BARAJI: 10KB altı olanlar genelde piksellidir (48px vb). 
-                # 10.000 byte üzerindeyse HD kabul ediyoruz.
+                
+                # KALİTE KONTROLÜ: 10KB (10.000 byte) altını HD kabul etmiyoruz.
                 if res.status_code == 200 and len(res.content) > 10000:
                     with open(path, 'wb') as f:
                         f.write(res.content)
@@ -418,11 +417,11 @@ class RetinaLogoEngine:
         return False
 
 def main():
-    engine = RetinaLogoEngine()
+    engine = LogoDevHDPlusEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print(f"🔥 Retina Logo Engine v29.0 Started")
+    print(f"🚀 Logo.dev HD+ Engine Started")
 
     catalog = {
         "lastUpdated": datetime.now().isoformat(),
@@ -435,15 +434,15 @@ def main():
         logo_fn = f"{domain.replace('.', '_')}.png"
         logo_path = f"{logo_dir}/{logo_fn}"
         
-        # AGRESİF KONTROL: Eğer dosya yoksa VEYA dosya kalitesizse (10KB altıysa) tekrar indir.
-        needs_download = True
+        # Eğer logo yoksa veya 10KB altındaysa (pikselliyse) indir
+        needs_update = True
         if os.path.exists(logo_path):
-            if os.path.getsize(logo_path) > 10000: # Zaten kaliteli bir dosya var
-                needs_download = False
+            if os.path.getsize(logo_path) > 10000:
+                needs_update = False
 
-        if needs_download:
+        if needs_update:
             success = engine.fetch_logo(domain, logo_path)
-            status = "✨ HD FETCHED" if success else "❌ LOW QUALITY"
+            status = "✨ LOGO.DEV HD" if success else "❌ NOT FOUND/LOW RES"
         else:
             status = "📦 ALREADY HD"
 
@@ -453,6 +452,8 @@ def main():
 
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
+
+    print("\n🏁 Mission Accomplished! Catalog is now powered by Logo.dev.")
 
 if __name__ == "__main__":
     main()
