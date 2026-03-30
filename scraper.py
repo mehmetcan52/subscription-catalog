@@ -1,6 +1,8 @@
 import json
 import os
 import requests
+import re
+from bs4 import BeautifulSoup
 from datetime import datetime
 import time
 # --- CONFIGURATION ---
@@ -348,27 +350,53 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-class UltraHDLogoEngine:
+class BruteforceHDLogoEngine:
     def __init__(self):
         self.session = requests.Session()
-        # Retina standartlarında istek göndermek için modern bir Mac User-Agent
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
-        })
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1'
+        }
+
+    def get_apple_touch_icon(self, domain):
+        """Web sitesinin HTML kodlarına girer ve en kaliteli ikonu bulur."""
+        try:
+            url = f"https://www.{domain}" if not domain.startswith('http') else domain
+            response = self.session.get(url, headers=self.headers, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # 1. Apple Touch Icon ara (Genelde 180x180 veya 512x512 olur)
+            icon_link = soup.find("link", rel=re.compile(r"apple-touch-icon|icon", re.I), sizes=re.compile(r"\d{3}x\d{3}"))
+            if not icon_link:
+                icon_link = soup.find("link", rel=re.compile(r"apple-touch-icon|icon", re.I))
+            
+            if icon_link and icon_link.get('href'):
+                href = icon_link.get('href')
+                if not href.startswith('http'):
+                    href = f"https://{domain.strip('/')}/{href.lstrip('/')}"
+                return href
+        except:
+            return None
+        return None
 
     def fetch_logo(self, domain, path):
-        # En kaliteliden başlayarak kaynak sıralaması
-        sources = [
-            f"https://img.logo.dev/{domain}?size=512", # Logo.dev (512px Focus)
-            f"https://logo.clearbit.com/{domain}?size=512", # Clearbit (512px Force)
-            f"https://www.google.com/s2/favicons?domain={domain}&sz=256" # Google S2 (Safe Fallback)
-        ]
+        # 1. Strateji: HTML'den Apple Touch Icon (En kalitelisi budur)
+        apple_icon_url = self.get_apple_touch_icon(domain)
+        
+        # 2. Strateji: Logo API'leri ve Fallbackler
+        sources = []
+        if apple_icon_url: sources.append(apple_icon_url)
+        sources.extend([
+            f"https://img.logo.dev/{domain}?size=512",
+            f"https://logo.clearbit.com/{domain}?size=512",
+            f"https://www.google.com/s2/favicons?domain={domain}&sz=256"
+        ])
 
         for url in sources:
             try:
-                res = self.session.get(url, timeout=12)
-                # 3KB altı görseller genelde düşük çözünürlüklü ikonlardır, kabul etmiyoruz.
-                if res.status_code == 200 and len(res.content) > 3000:
+                res = self.session.get(url, headers=self.headers, timeout=10)
+                # KALİTE KONTROLÜ: 48px ikonlar genelde 2KB'dan küçüktür. 
+                # 4KB (4000 byte) altını "kalitesiz" sayıp reddediyoruz.
+                if res.status_code == 200 and len(res.content) > 4000:
                     with open(path, 'wb') as f:
                         f.write(res.content)
                     return True
@@ -377,43 +405,30 @@ class UltraHDLogoEngine:
         return False
 
 def main():
-    engine = UltraHDLogoEngine()
+    engine = BruteforceHDLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print(f"🔥 HD Logo Engine Started: {len(SERVICES)} Services")
-
-    catalog = {
-        "lastUpdated": datetime.now().isoformat(),
-        "total": len(SERVICES),
-        "cdn_base": f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/",
-        "services": []
-    }
+    catalog = {"lastUpdated": datetime.now().isoformat(), "services": []}
 
     for i, s in enumerate(SERVICES, 1):
-        # Domain'den temiz dosya ismi oluştur
-        clean_domain = s['domain'].replace('https://', '').replace('http://', '').split('/')[0]
+        clean_domain = s['domain'].replace('http://', '').replace('https://', '').split('/')[0]
         logo_fn = f"{clean_domain.replace('.', '_')}.png"
         logo_path = f"{logo_dir}/{logo_fn}"
         
-        # Logoyu çek (Eğer dosya yoksa)
-        if not os.path.exists(logo_path):
+        # Force fetch: Eğer dosya 5KB'dan küçükse (pikselliyse) yeniden indir
+        if not os.path.exists(logo_path) or os.path.getsize(logo_path) < 4000:
             success = engine.fetch_logo(clean_domain, logo_path)
-            status = "✅ HD FETCHED" if success else "⚠️ FAILED"
+            status = "✨ HD FETCHED" if success else "❌ FAILED"
         else:
-            status = "📦 EXISTING"
+            status = "📦 ALREADY HD"
 
         print(f"[{i}/{len(SERVICES)}] {status}: {s['name']}")
-
-        # JSON Meta Verilerini Hazırla
         s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{logo_path}"
         catalog['services'].append(s)
 
-    # Final Katalog Dosyasını Kaydet
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
-
-    print("\n🏁 MISSION COMPLETE: 300+ HD Assets are ready for SwiftUI 6.0!")
 
 if __name__ == "__main__":
     main()
