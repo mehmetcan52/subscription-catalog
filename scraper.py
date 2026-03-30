@@ -350,41 +350,54 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-class BruteforceHDLogoEngine:
+class RetinaLogoEngine:
     def __init__(self):
         self.session = requests.Session()
+        # Kendimizi iPhone 15 Pro gibi tanıtıyoruz ki en kaliteli 'apple-touch-icon'u versinler.
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1'
         }
 
-    def get_apple_touch_icon(self, domain):
-        """Web sitesinin HTML kodlarına girer ve en kaliteli ikonu bulur."""
+    def get_high_res_from_html(self, domain):
+        """Web sitesinin HTML kodlarından en büyük ikonu bulur."""
         try:
-            url = f"https://www.{domain}" if not domain.startswith('http') else domain
-            response = self.session.get(url, headers=self.headers, timeout=10)
-            soup = BeautifulSoup(response.text, 'html.parser')
+            url = f"https://www.{domain}"
+            res = self.session.get(url, headers=self.headers, timeout=12)
+            soup = BeautifulSoup(res.text, 'html.parser')
             
-            # 1. Apple Touch Icon ara (Genelde 180x180 veya 512x512 olur)
-            icon_link = soup.find("link", rel=re.compile(r"apple-touch-icon|icon", re.I), sizes=re.compile(r"\d{3}x\d{3}"))
-            if not icon_link:
-                icon_link = soup.find("link", rel=re.compile(r"apple-touch-icon|icon", re.I))
+            # HTML içindeki tüm ikon etiketlerini topla
+            icons = soup.find_all("link", rel=re.compile(r"icon|apple-touch-icon", re.I))
             
-            if icon_link and icon_link.get('href'):
-                href = icon_link.get('href')
-                if not href.startswith('http'):
-                    href = f"https://{domain.strip('/')}/{href.lstrip('/')}"
-                return href
+            best_href = None
+            max_size = 0
+
+            for icon in icons:
+                href = icon.get('href')
+                sizes = icon.get('sizes', '0x0').lower()
+                
+                # Boyut analizi (Örn: 180x180)
+                current_size = int(sizes.split('x')[0]) if 'x' in sizes else 0
+                
+                if current_size > max_size:
+                    max_size = current_size
+                    best_href = href
+                elif not best_href:
+                    best_href = href
+
+            if best_href:
+                if not best_href.startswith('http'):
+                    best_href = f"https://{domain.strip('/')}/{best_href.lstrip('/')}"
+                return best_href
         except:
-            return None
+            pass
         return None
 
     def fetch_logo(self, domain, path):
-        # 1. Strateji: HTML'den Apple Touch Icon (En kalitelisi budur)
-        apple_icon_url = self.get_apple_touch_icon(domain)
+        # Kaynakları kaliteden düşüğe sıralıyoruz
+        html_icon = self.get_high_res_from_html(domain)
         
-        # 2. Strateji: Logo API'leri ve Fallbackler
         sources = []
-        if apple_icon_url: sources.append(apple_icon_url)
+        if html_icon: sources.append(html_icon)
         sources.extend([
             f"https://img.logo.dev/{domain}?size=512",
             f"https://logo.clearbit.com/{domain}?size=512",
@@ -394,9 +407,9 @@ class BruteforceHDLogoEngine:
         for url in sources:
             try:
                 res = self.session.get(url, headers=self.headers, timeout=10)
-                # KALİTE KONTROLÜ: 48px ikonlar genelde 2KB'dan küçüktür. 
-                # 4KB (4000 byte) altını "kalitesiz" sayıp reddediyoruz.
-                if res.status_code == 200 and len(res.content) > 4000:
+                # KALİTE BARAJI: 10KB altı olanlar genelde piksellidir (48px vb). 
+                # 10.000 byte üzerindeyse HD kabul ediyoruz.
+                if res.status_code == 200 and len(res.content) > 10000:
                     with open(path, 'wb') as f:
                         f.write(res.content)
                     return True
@@ -405,21 +418,32 @@ class BruteforceHDLogoEngine:
         return False
 
 def main():
-    engine = BruteforceHDLogoEngine()
+    engine = RetinaLogoEngine()
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    catalog = {"lastUpdated": datetime.now().isoformat(), "services": []}
+    print(f"🔥 Retina Logo Engine v29.0 Started")
+
+    catalog = {
+        "lastUpdated": datetime.now().isoformat(),
+        "total": len(SERVICES),
+        "services": []
+    }
 
     for i, s in enumerate(SERVICES, 1):
-        clean_domain = s['domain'].replace('http://', '').replace('https://', '').split('/')[0]
-        logo_fn = f"{clean_domain.replace('.', '_')}.png"
+        domain = s['domain'].replace('https://', '').replace('http://', '').split('/')[0]
+        logo_fn = f"{domain.replace('.', '_')}.png"
         logo_path = f"{logo_dir}/{logo_fn}"
         
-        # Force fetch: Eğer dosya 5KB'dan küçükse (pikselliyse) yeniden indir
-        if not os.path.exists(logo_path) or os.path.getsize(logo_path) < 4000:
-            success = engine.fetch_logo(clean_domain, logo_path)
-            status = "✨ HD FETCHED" if success else "❌ FAILED"
+        # AGRESİF KONTROL: Eğer dosya yoksa VEYA dosya kalitesizse (10KB altıysa) tekrar indir.
+        needs_download = True
+        if os.path.exists(logo_path):
+            if os.path.getsize(logo_path) > 10000: # Zaten kaliteli bir dosya var
+                needs_download = False
+
+        if needs_download:
+            success = engine.fetch_logo(domain, logo_path)
+            status = "✨ HD FETCHED" if success else "❌ LOW QUALITY"
         else:
             status = "📦 ALREADY HD"
 
