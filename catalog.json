@@ -1,6 +1,7 @@
 {
-  "lastUpdated": "2026-03-30T21:15:50.925681",
+  "lastUpdated": "2026-03-30T21:24:26.000798",
   "total": 320,
+  "cdn_base": "https://cdn.jsdelivr.net/gh/mehmetcan52/subscription-catalog/",
   "services": [
     {
       "id": "netflix",
