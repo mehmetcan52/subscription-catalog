@@ -2,7 +2,7 @@ import json
 import os
 import requests
 from datetime import datetime
-
+import time
 # --- CONFIGURATION ---
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
@@ -348,46 +348,72 @@ SERVICES = [
     {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
 ]
 
-def main():
-    session = requests.Session()
-    session.headers.update({'User-Agent': 'Mozilla/5.0'})
-    
-    logo_dir = "logos"
-    if not os.path.exists(logo_dir):
-        os.makedirs(logo_dir)
+class UltraHDLogoEngine:
+    def __init__(self):
+        self.session = requests.Session()
+        # Retina standartlarında istek göndermek için modern bir Mac User-Agent
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'
+        })
 
-    print(f"🚀 Logo Engine Started: {len(SERVICES)} Services")
+    def fetch_logo(self, domain, path):
+        # En kaliteliden başlayarak kaynak sıralaması
+        sources = [
+            f"https://img.logo.dev/{domain}?size=512", # Logo.dev (512px Focus)
+            f"https://logo.clearbit.com/{domain}?size=512", # Clearbit (512px Force)
+            f"https://www.google.com/s2/favicons?domain={domain}&sz=256" # Google S2 (Safe Fallback)
+        ]
+
+        for url in sources:
+            try:
+                res = self.session.get(url, timeout=12)
+                # 3KB altı görseller genelde düşük çözünürlüklü ikonlardır, kabul etmiyoruz.
+                if res.status_code == 200 and len(res.content) > 3000:
+                    with open(path, 'wb') as f:
+                        f.write(res.content)
+                    return True
+            except:
+                continue
+        return False
+
+def main():
+    engine = UltraHDLogoEngine()
+    logo_dir = "logos"
+    if not os.path.exists(logo_dir): os.makedirs(logo_dir)
+
+    print(f"🔥 HD Logo Engine Started: {len(SERVICES)} Services")
 
     catalog = {
         "lastUpdated": datetime.now().isoformat(),
         "total": len(SERVICES),
+        "cdn_base": f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/",
         "services": []
     }
 
     for i, s in enumerate(SERVICES, 1):
-        logo_fn = f"{s['domain'].replace('.', '_')}.png"
+        # Domain'den temiz dosya ismi oluştur
+        clean_domain = s['domain'].replace('https://', '').replace('http://', '').split('/')[0]
+        logo_fn = f"{clean_domain.replace('.', '_')}.png"
         logo_path = f"{logo_dir}/{logo_fn}"
         
-        # Eğer logo yoksa indir
+        # Logoyu çek (Eğer dosya yoksa)
         if not os.path.exists(logo_path):
-            print(f"[{i}/{len(SERVICES)}] Fetching logo for: {s['name']}")
-            try:
-                # Clearbit API: En temiz logoları buradan çekeriz
-                res = session.get(f"https://logo.clearbit.com/{s['domain']}?size=512", timeout=10)
-                if res.status_code == 200:
-                    with open(logo_path, 'wb') as f:
-                        f.write(res.content)
-            except Exception as e:
-                print(f"  ❌ Failed: {e}")
+            success = engine.fetch_logo(clean_domain, logo_path)
+            status = "✅ HD FETCHED" if success else "⚠️ FAILED"
+        else:
+            status = "📦 EXISTING"
 
-        # Katalog bilgisini ekle
+        print(f"[{i}/{len(SERVICES)}] {status}: {s['name']}")
+
+        # JSON Meta Verilerini Hazırla
         s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/{logo_path}"
         catalog['services'].append(s)
 
+    # Final Katalog Dosyasını Kaydet
     with open('catalog.json', 'w', encoding='utf-8') as f:
         json.dump(catalog, f, indent=2, ensure_ascii=False)
 
-    print("\n✅ All logos processed. catalog.json is ready!")
+    print("\n🏁 MISSION COMPLETE: 300+ HD Assets are ready for SwiftUI 6.0!")
 
 if __name__ == "__main__":
     main()
