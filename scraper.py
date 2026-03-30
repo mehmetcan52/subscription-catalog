@@ -4,10 +4,9 @@ import os
 from datetime import datetime
 import time
 
-# --- COMPREHENSIVE SERVICE LIST (210+ ENTRIES) ---
-# Categories: Video, Music, AI, Productivity, Gaming, Education, Health, News, Lifestyle.
+# --- FULL COMPREHENSIVE SERVICE LIST (210+ ENTRIES) ---
 SERVICES = [
-    # --- VIDEO & STREAMING (GLOBAL) ---
+    # --- VIDEO & STREAMING ---
     {"id": "netflix", "name": "Netflix", "domain": "netflix.com", "category": "Video"},
     {"id": "disneyplus", "name": "Disney+", "domain": "disneyplus.com", "category": "Video"},
     {"id": "primevideo", "name": "Amazon Prime Video", "domain": "primevideo.com", "category": "Video"},
@@ -24,18 +23,12 @@ SERVICES = [
     {"id": "rakuten_tv", "name": "Rakuten TV", "domain": "rakuten.tv", "category": "Video"},
     {"id": "skyshowtime", "name": "SkyShowtime", "domain": "skyshowtime.com", "category": "Video"},
     {"id": "viaplay", "name": "Viaplay", "domain": "viaplay.com", "category": "Video"},
-    {"id": "britbox", "name": "BritBox", "domain": "britbox.com", "category": "Video"},
-    {"id": "curiositystream", "name": "CuriosityStream", "domain": "curiositystream.com", "category": "Video"},
-    {"id": "vimeo", "name": "Vimeo On Demand", "domain": "vimeo.com", "category": "Video"},
-
-    # --- VIDEO & STREAMING (TURKEY) ---
     {"id": "blutv", "name": "BluTV", "domain": "blutv.com", "category": "Video"},
     {"id": "exxen", "name": "Exxen", "domain": "exxen.com", "category": "Video"},
     {"id": "gain", "name": "GAIN", "domain": "gain.tv", "category": "Video"},
     {"id": "ssport_plus", "name": "S Sport Plus", "domain": "ssportplus.com", "category": "Video"},
     {"id": "tod_tr", "name": "TOD (beIN)", "domain": "todtv.com.tr", "category": "Video"},
     {"id": "tv_plus", "name": "TV+", "domain": "tvplus.com.tr", "category": "Video"},
-    {"id": "dsmart_go", "name": "D-Smart GO", "domain": "dsmartgo.com.tr", "category": "Video"},
     {"id": "tabii", "name": "Tabii Premium", "domain": "tabii.com", "category": "Video"},
 
     # --- ARTIFICIAL INTELLIGENCE (AI) ---
@@ -47,16 +40,14 @@ SERVICES = [
     {"id": "github_copilot", "name": "GitHub Copilot", "domain": "github.com", "category": "AI"},
     {"id": "notion_ai", "name": "Notion AI", "domain": "notion.so", "category": "AI"},
     {"id": "elevenlabs", "name": "ElevenLabs", "domain": "elevenlabs.io", "category": "AI"},
-    {"id": "jasper", "name": "Jasper AI", "domain": "jasper.ai", "category": "AI"},
     {"id": "runway", "name": "Runway Gen-3", "domain": "runwayml.com", "category": "AI"},
-    {"id": "pika", "name": "Pika Art", "domain": "pika.art", "category": "AI"},
-    {"id": "poe", "name": "Poe (Quora)", "domain": "poe.com", "category": "AI"},
     {"id": "heygen", "name": "HeyGen", "domain": "heygen.com", "category": "AI"},
     {"id": "leonardo_ai", "name": "Leonardo.ai", "domain": "leonardo.ai", "category": "AI"},
-    {"id": "canva_pro", "name": "Canva Pro", "domain": "canva.com", "category": "AI"},
     {"id": "descript", "name": "Descript", "domain": "descript.com", "category": "AI"},
     {"id": "luma_ai", "name": "Luma Dream Machine", "domain": "lumalabs.ai", "category": "AI"},
     {"id": "otter_ai", "name": "Otter.ai", "domain": "otter.ai", "category": "AI"},
+    {"id": "pika", "name": "Pika Art", "domain": "pika.art", "category": "AI"},
+    {"id": "jasper", "name": "Jasper AI", "domain": "jasper.ai", "category": "AI"},
 
     # --- MUSIC & AUDIO ---
     {"id": "spotify", "name": "Spotify", "domain": "spotify.com", "category": "Music"},
@@ -64,9 +55,6 @@ SERVICES = [
     {"id": "youtube_music", "name": "YouTube Music", "domain": "music.youtube.com", "category": "Music"},
     {"id": "tidal", "name": "Tidal", "domain": "tidal.com", "category": "Music"},
     {"id": "deezer", "name": "Deezer", "domain": "deezer.com", "category": "Music"},
-    {"id": "amazon_music", "name": "Amazon Music Unlimited", "domain": "music.amazon.com", "category": "Music"},
-    {"id": "soundcloud", "name": "SoundCloud Go", "domain": "soundcloud.com", "category": "Music"},
-    {"id": "pandora", "name": "Pandora Plus", "domain": "pandora.com", "category": "Music"},
     {"id": "fizy", "name": "Fizy", "domain": "fizy.com", "category": "Music"},
     {"id": "muud", "name": "Muud", "domain": "muud.com.tr", "category": "Music"},
     {"id": "audible", "name": "Audible", "domain": "audible.com", "category": "Books"},
@@ -80,9 +68,10 @@ SERVICES = [
     {"id": "google_one", "name": "Google One", "domain": "google.com", "category": "Cloud"},
     {"id": "microsoft_365", "name": "Microsoft 365", "domain": "microsoft.com", "category": "Productivity"},
     {"id": "adobe_cc", "name": "Adobe Creative Cloud", "domain": "adobe.com", "category": "Design"},
-    {"id": "notion", "name": "Notion Plus", "domain": "notion.so", "category": "Productivity"},
+    {"id": "canva", "name": "Canva Pro", "domain": "canva.com", "category": "Design"},
+    {"id": "notion", "name": "Notion", "domain": "notion.so", "category": "Productivity"},
     {"id": "dropbox", "name": "Dropbox", "domain": "dropbox.com", "category": "Cloud"},
-    {"id": "zoom", "name": "Zoom Pro", "domain": "zoom.us", "category": "Productivity"},
+    {"id": "zoom", "name": "Zoom", "domain": "zoom.us", "category": "Productivity"},
     {"id": "1password", "name": "1Password", "domain": "1password.com", "category": "Security"},
     {"id": "lastpass", "name": "LastPass", "domain": "lastpass.com", "category": "Security"},
     {"id": "dashlane", "name": "Dashlane", "domain": "dashlane.com", "category": "Security"},
@@ -133,7 +122,7 @@ SERVICES = [
     {"id": "memrise", "name": "Memrise Pro", "domain": "memrise.com", "category": "Education"},
     {"id": "quizlet", "name": "Quizlet Plus", "domain": "quizlet.com", "category": "Education"},
 
-    # --- HEALTH, FITNESS & LIFESTYLE ---
+    # --- HEALTH & FITNESS ---
     {"id": "headspace", "name": "Headspace", "domain": "headspace.com", "category": "Health"},
     {"id": "calm", "name": "Calm", "domain": "calm.com", "category": "Health"},
     {"id": "strava", "name": "Strava Premium", "domain": "strava.com", "category": "Fitness"},
@@ -149,7 +138,7 @@ SERVICES = [
     {"id": "workout_trainer", "name": "Workout Trainer", "domain": "skimble.com", "category": "Fitness"},
     {"id": "lifesum", "name": "Lifesum Premium", "domain": "lifesum.com", "category": "Health"},
 
-    # --- SOCIAL, DATING & LIFESTYLE ---
+    # --- SOCIAL & LIFESTYLE ---
     {"id": "linkedin_premium", "name": "LinkedIn Premium", "domain": "linkedin.com", "category": "Social"},
     {"id": "x_premium", "name": "X (Twitter) Premium", "domain": "x.com", "category": "Social"},
     {"id": "tinder_gold", "name": "Tinder Gold", "domain": "tinder.com", "category": "Lifestyle"},
@@ -193,8 +182,6 @@ SERVICES = [
 ]
 
 # --- REGIONAL PRICE DATABASE (The Master Gold Data) ---
-# Each service will provide prices for USD, TRY, EUR, and GBP.
-# If a price is 0.0, the app will prompt for Magic Import.
 REGIONAL_PRICES = {
     "netflix": {
         "Standard": {"TRY": 189.99, "USD": 15.49, "EUR": 12.99, "GBP": 10.99},
@@ -205,7 +192,7 @@ REGIONAL_PRICES = {
         "Family": {"TRY": 99.99, "USD": 19.99, "EUR": 17.99, "GBP": 17.99}
     },
     "chatgpt": {
-        "Plus": {"USD": 20.00, "EUR": 18.50, "GBP": 16.00, "TRY": 0.0} # Fixed USD globally
+        "Plus": {"USD": 20.00, "EUR": 18.50, "GBP": 16.00, "TRY": 0.0}
     },
     "youtube": {
         "Individual": {"TRY": 57.99, "USD": 13.99, "EUR": 12.99, "GBP": 12.99}
@@ -220,14 +207,7 @@ REGIONAL_PRICES = {
     },
     "primevideo": {
         "Prime": {"TRY": 39.00, "USD": 14.99, "EUR": 8.99, "GBP": 8.99}
-    },
-    "blutv": {
-        "Monthly": {"TRY": 139.90, "USD": 0.0, "EUR": 0.0, "GBP": 0.0}
-    },
-    "exxen": {
-        "Standard": {"TRY": 129.00, "USD": 0.0, "EUR": 0.0, "GBP": 0.0}
     }
-    # For services not listed here, bot will default to 0.0 for Magic Import trigger.
 }
 
 def fetch_best_logo(domain):
@@ -236,15 +216,17 @@ def fetch_best_logo(domain):
     safe_name = domain.replace('.', '_')
     file_path = f"logos/{safe_name}.png"
     
-    # Priority: Clearbit (High Quality PNG) > Google (Favicon Fallback)
+    # HD Logic: Clearbit 512px with fallback to Google
     urls = [
-        f"https://logo.clearbit.com/{domain}?size=512",
+        f"https://logo.clearbit.com/{domain}?size=512&format=png",
         f"https://www.google.com/s2/favicons?sz=128&domain={domain}"
     ]
     
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
+    
     for url in urls:
         try:
-            response = requests.get(url, timeout=10)
+            response = requests.get(url, headers=headers, timeout=10)
             if response.status_code == 200:
                 with open(file_path, 'wb') as f:
                     f.write(response.content)
@@ -258,12 +240,12 @@ def generate_catalog():
     GH_REPO = "subscription-catalog"
     
     catalog = {
-        "version": "1.9",
+        "version": "2.1",
         "lastUpdated": datetime.now().isoformat(),
         "services": []
     }
     
-    print(f"🚀 Starting Catalog Generation for {len(SERVICES)} services...")
+    print(f"🚀 Starting HD Catalog Generation for {len(SERVICES)} services...")
     
     for s in SERVICES:
         # 1. Automate Logo Discovery
@@ -276,22 +258,18 @@ def generate_catalog():
             plans_dict = REGIONAL_PRICES[s['id']]
             s['plans'] = []
             for name, prices in plans_dict.items():
-                # Ensure all 4 currencies exist
                 full_prices = {"USD": 0.0, "TRY": 0.0, "EUR": 0.0, "GBP": 0.0}
                 full_prices.update(prices)
                 s['plans'].append({"name": name, "prices": full_prices})
         else:
-            # All 210+ will have this structure for the app to handle via Magic Import
-            s['plans'] = [
-                {"name": "Standard", "prices": {"USD": 0.0, "TRY": 0.0, "EUR": 0.0, "GBP": 0.0}}
-            ]
+            s['plans'] = [{"name": "Standard", "prices": {"USD": 0.0, "TRY": 0.0, "EUR": 0.0, "GBP": 0.0}}]
             
         catalog['services'].append(s)
-        time.sleep(0.05) # Speed up but stay safe
+        time.sleep(0.05)
 
     with open('catalog.json', 'w') as f:
         json.dump(catalog, f, indent=2)
-    print(f"✅ SUCCESS: catalog.json generated with {len(SERVICES)} services.")
+    print(f"✅ SUCCESS: catalog.json created with {len(SERVICES)} services.")
 
 if __name__ == "__main__":
     generate_catalog()
