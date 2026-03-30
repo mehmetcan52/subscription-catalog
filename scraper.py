@@ -1,8 +1,16 @@
 import json
-import requests
 import os
-from datetime import datetime
+import re
+import random
 import time
+from datetime import datetime
+from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup
+import requests
+
+# --- CONFIGURATION ---
+GH_USER = "mehmetcan52"
+GH_REPO = "subscription-catalog"
 
 # --- FULL COMPREHENSIVE SERVICE LIST (210+ ENTRIES) ---
 SERVICES = [
@@ -181,7 +189,7 @@ SERVICES = [
     {"id": "digitalocean", "name": "DigitalOcean", "domain": "digitalocean.com", "category": "Productivity"}
 ]
 
-# --- REGIONAL PRICE DATABASE (The Master Gold Data) ---
+# --- REGIONAL PRICE DATABASE (Fallback Data) ---
 REGIONAL_PRICES = {
     "netflix": {
         "Standard": {"TRY": 189.99, "USD": 15.49, "EUR": 12.99, "GBP": 10.99},
@@ -210,51 +218,115 @@ REGIONAL_PRICES = {
     }
 }
 
-def fetch_best_logo(domain):
-    """Downloads the highest resolution logo available."""
+class PriceUpdater:
+    def __init__(self):
+        self.user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'
+
+    def clean_price(self, price_str):
+        if not price_str: return 0.0
+        cleaned = re.sub(r'[^\d.,]', '', price_str)
+        cleaned = cleaned.replace(',', '.')
+        try:
+            return float(cleaned)
+        except:
+            return 0.0
+
+    def get_price_with_playwright(self, url, selector, plan_name_map):
+        """Scrapes dynamic prices with human-mimicry logic."""
+        try:
+            with sync_playwright() as p:
+                browser = p.chromium.launch(headless=True)
+                context = browser.new_context(
+                    user_agent=self.user_agent,
+                    viewport={'width': 1920, 'height': 1080}
+                )
+                page = context.new_page()
+                
+                # Human Mimicry
+                time.sleep(random.uniform(2, 5))
+                print(f"  🌐 Navigating to: {url}")
+                page.goto(url, wait_until="networkidle", timeout=60000)
+                
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight / 3)")
+                time.sleep(random.uniform(1, 3))
+                page.wait_for_timeout(random.randint(2000, 4000))
+                
+                content = page.content()
+                soup = BeautifulSoup(content, 'html.parser')
+                browser.close()
+                
+                prices = {}
+                elements = soup.select(selector)
+                for element in elements:
+                    text = element.get_text()
+                    for plan_key, plan_name in plan_name_map.items():
+                        if plan_key.lower() in text.lower() and ("TL" in text or "₺" in text):
+                            prices[plan_name] = {"TRY": self.clean_price(text)}
+                
+                return prices if prices else None
+        except Exception as e:
+            print(f"  ❌ Scraping Error: {e}")
+            return None
+
+def fetch_best_logo(domain, session):
     if not os.path.exists('logos'): os.makedirs('logos')
     safe_name = domain.replace('.', '_')
     file_path = f"logos/{safe_name}.png"
     
-    # HD Logic: Clearbit 512px with fallback to Google
+    if os.path.exists(file_path): return True
+
     urls = [
         f"https://logo.clearbit.com/{domain}?size=512&format=png",
         f"https://www.google.com/s2/favicons?sz=128&domain={domain}"
     ]
-    
-    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)'}
-    
     for url in urls:
         try:
-            response = requests.get(url, headers=headers, timeout=10)
-            if response.status_code == 200:
+            res = session.get(url, timeout=10)
+            if res.status_code == 200:
                 with open(file_path, 'wb') as f:
-                    f.write(response.content)
+                    f.write(res.content)
                 return True
         except: continue
     return False
 
 def generate_catalog():
-    # SETTINGS: Your GitHub Configuration
-    GH_USER = "mehmetcan52" 
-    GH_REPO = "subscription-catalog"
-    
+    updater = PriceUpdater()
+    logo_session = requests.Session()
+    logo_session.headers.update({'User-Agent': updater.user_agent})
+
+    print(f"🚀 Starting Automated Scraper: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+
+    # --- TARGETED LIVE UPDATES ---
+    # Sadece taramak istediğimiz ana servisleri buraya ekliyoruz
+    live_prices = {
+        "netflix": updater.get_price_with_playwright(
+            "https://help.netflix.com/tr/node/24926", 
+            "li p", 
+            {"Standart": "Standard", "Özel": "Premium"}
+        ),
+    }
+
     catalog = {
-        "version": "2.1",
+        "version": "3.1",
         "lastUpdated": datetime.now().isoformat(),
+        "totalServices": len(SERVICES),
         "services": []
     }
-    
-    print(f"🚀 Starting HD Catalog Generation for {len(SERVICES)} services...")
-    
-    for s in SERVICES:
-        # 1. Automate Logo Discovery
-        fetch_best_logo(s['domain'])
+
+    for index, s in enumerate(SERVICES, 1):
+        print(f"[{index}/{len(SERVICES)}] Processing: {s['name']}...")
+        
+        # 1. Logo Discovery
+        fetch_best_logo(s['domain'], logo_session)
         img_name = s['domain'].replace('.', '_') + ".png"
         s['logoUrl'] = f"https://cdn.jsdelivr.net/gh/{GH_USER}/{GH_REPO}/logos/{img_name}"
-        
-        # 2. Multi-Region Price Matching
-        if s['id'] in REGIONAL_PRICES:
+
+        # 2. Smart Price Logic (Live > Regional > Default)
+        if s['id'] in live_prices and live_prices[s['id']]:
+            scraped_plans = live_prices[s['id']]
+            s['plans'] = [{"name": n, "prices": p} for n, p in scraped_plans.items()]
+            print(f"  ✨ Live update success for {s['name']}")
+        elif s['id'] in REGIONAL_PRICES:
             plans_dict = REGIONAL_PRICES[s['id']]
             s['plans'] = []
             for name, prices in plans_dict.items():
@@ -262,14 +334,19 @@ def generate_catalog():
                 full_prices.update(prices)
                 s['plans'].append({"name": name, "prices": full_prices})
         else:
-            s['plans'] = [{"name": "Standard", "prices": {"USD": 0.0, "TRY": 0.0, "EUR": 0.0, "GBP": 0.0}}]
-            
-        catalog['services'].append(s)
-        time.sleep(0.05)
+            s['plans'] = [{"name": "Standard", "prices": {"TRY": 0.0, "USD": 0.0, "EUR": 0.0, "GBP": 0.0}}]
 
-    with open('catalog.json', 'w') as f:
-        json.dump(catalog, f, indent=2)
-    print(f"✅ SUCCESS: catalog.json created with {len(SERVICES)} services.")
+        catalog['services'].append(s)
+        
+        # Anti-ban sleep for logos
+        if index % 15 == 0:
+            time.sleep(1)
+
+    # Save Catalog
+    with open('catalog.json', 'w', encoding='utf-8') as f:
+        json.dump(catalog, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n✅ FINISHED: catalog.json updated with {len(SERVICES)} services.")
 
 if __name__ == "__main__":
     generate_catalog()
