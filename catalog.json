@@ -1,0 +1,2958 @@
+{
+  "version": "1.9",
+  "lastUpdated": "2026-03-30T19:41:30.227200",
+  "services": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "domain": "netflix.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/netflix_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 15.49,
+            "TRY": 189.99,
+            "EUR": 12.99,
+            "GBP": 10.99
+          }
+        },
+        {
+          "name": "Premium",
+          "prices": {
+            "USD": 22.99,
+            "TRY": 299.99,
+            "EUR": 19.99,
+            "GBP": 17.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "disneyplus",
+      "name": "Disney+",
+      "domain": "disneyplus.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/disneyplus_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 9.99,
+            "TRY": 134.99,
+            "EUR": 8.99,
+            "GBP": 7.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "primevideo",
+      "name": "Amazon Prime Video",
+      "domain": "primevideo.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/primevideo_com.png",
+      "plans": [
+        {
+          "name": "Prime",
+          "prices": {
+            "USD": 14.99,
+            "TRY": 39.0,
+            "EUR": 8.99,
+            "GBP": 8.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "domain": "youtube.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/youtube_com.png",
+      "plans": [
+        {
+          "name": "Individual",
+          "prices": {
+            "USD": 13.99,
+            "TRY": 57.99,
+            "EUR": 12.99,
+            "GBP": 12.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "apple_tv",
+      "name": "Apple TV+",
+      "domain": "tv.apple.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tv_apple_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "domain": "hulu.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hulu_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max (HBO)",
+      "domain": "max.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/max_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "paramount_plus",
+      "name": "Paramount+",
+      "domain": "paramountplus.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/paramountplus_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "domain": "peacocktv.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/peacocktv_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "domain": "crunchyroll.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/crunchyroll_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "mubi",
+      "name": "MUBI",
+      "domain": "mubi.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/mubi_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "discovery_plus",
+      "name": "Discovery+",
+      "domain": "discoveryplus.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/discoveryplus_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "fubo_tv",
+      "name": "FuboTV",
+      "domain": "fubo.tv",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fubo_tv.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "rakuten_tv",
+      "name": "Rakuten TV",
+      "domain": "rakuten.tv",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/rakuten_tv.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "skyshowtime",
+      "name": "SkyShowtime",
+      "domain": "skyshowtime.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skyshowtime_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "viaplay",
+      "name": "Viaplay",
+      "domain": "viaplay.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/viaplay_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "britbox",
+      "name": "BritBox",
+      "domain": "britbox.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/britbox_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "curiositystream",
+      "name": "CuriosityStream",
+      "domain": "curiositystream.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/curiositystream_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "vimeo",
+      "name": "Vimeo On Demand",
+      "domain": "vimeo.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/vimeo_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "blutv",
+      "name": "BluTV",
+      "domain": "blutv.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blutv_com.png",
+      "plans": [
+        {
+          "name": "Monthly",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 139.9,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "exxen",
+      "name": "Exxen",
+      "domain": "exxen.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/exxen_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 129.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain",
+      "name": "GAIN",
+      "domain": "gain.tv",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/gain_tv.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ssport_plus",
+      "name": "S Sport Plus",
+      "domain": "ssportplus.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ssportplus_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tod_tr",
+      "name": "TOD (beIN)",
+      "domain": "todtv.com.tr",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/todtv_com_tr.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv_plus",
+      "name": "TV+",
+      "domain": "tvplus.com.tr",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tvplus_com_tr.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "dsmart_go",
+      "name": "D-Smart GO",
+      "domain": "dsmartgo.com.tr",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dsmartgo_com_tr.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tabii",
+      "name": "Tabii Premium",
+      "domain": "tabii.com",
+      "category": "Video",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tabii_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT Plus",
+      "domain": "openai.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/openai_com.png",
+      "plans": [
+        {
+          "name": "Plus",
+          "prices": {
+            "USD": 20.0,
+            "TRY": 0.0,
+            "EUR": 18.5,
+            "GBP": 16.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Pro",
+      "domain": "anthropic.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/anthropic_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "domain": "midjourney.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/midjourney_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity Pro",
+      "domain": "perplexity.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/perplexity_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "domain": "grammarly.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/grammarly_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "github_copilot",
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/github_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "notion_ai",
+      "name": "Notion AI",
+      "domain": "notion.so",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/notion_so.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/elevenlabs_io.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper AI",
+      "domain": "jasper.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/jasper_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway Gen-3",
+      "domain": "runwayml.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/runwayml_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pika",
+      "name": "Pika Art",
+      "domain": "pika.art",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pika_art.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "poe",
+      "name": "Poe (Quora)",
+      "domain": "poe.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/poe_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "domain": "heygen.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/heygen_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "leonardo_ai",
+      "name": "Leonardo.ai",
+      "domain": "leonardo.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/leonardo_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "canva_pro",
+      "name": "Canva Pro",
+      "domain": "canva.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/canva_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "domain": "descript.com",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/descript_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "luma_ai",
+      "name": "Luma Dream Machine",
+      "domain": "lumalabs.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lumalabs_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "otter_ai",
+      "name": "Otter.ai",
+      "domain": "otter.ai",
+      "category": "AI",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/otter_ai.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "domain": "spotify.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/spotify_com.png",
+      "plans": [
+        {
+          "name": "Individual",
+          "prices": {
+            "USD": 11.99,
+            "TRY": 59.99,
+            "EUR": 10.99,
+            "GBP": 11.99
+          }
+        },
+        {
+          "name": "Family",
+          "prices": {
+            "USD": 19.99,
+            "TRY": 99.99,
+            "EUR": 17.99,
+            "GBP": 17.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "apple_music",
+      "name": "Apple Music",
+      "domain": "music.apple.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_apple_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "youtube_music",
+      "name": "YouTube Music",
+      "domain": "music.youtube.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_youtube_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tidal",
+      "name": "Tidal",
+      "domain": "tidal.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tidal_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "deezer",
+      "name": "Deezer",
+      "domain": "deezer.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/deezer_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "amazon_music",
+      "name": "Amazon Music Unlimited",
+      "domain": "music.amazon.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/music_amazon_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "soundcloud",
+      "name": "SoundCloud Go",
+      "domain": "soundcloud.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/soundcloud_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pandora",
+      "name": "Pandora Plus",
+      "domain": "pandora.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pandora_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "fizy",
+      "name": "Fizy",
+      "domain": "fizy.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fizy_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "muud",
+      "name": "Muud",
+      "domain": "muud.com.tr",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/muud_com_tr.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "domain": "audible.com",
+      "category": "Books",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/audible_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "storytel",
+      "name": "Storytel",
+      "domain": "storytel.com",
+      "category": "Books",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/storytel_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "audioteka",
+      "name": "Audioteka",
+      "domain": "audioteka.com",
+      "category": "Books",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/audioteka_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "blinkist",
+      "name": "Blinkist",
+      "domain": "blinkist.com",
+      "category": "Books",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blinkist_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pocket_casts",
+      "name": "Pocket Casts Plus",
+      "domain": "pocketcasts.com",
+      "category": "Music",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/pocketcasts_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud+",
+      "domain": "apple.com",
+      "category": "Cloud",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/apple_com.png",
+      "plans": [
+        {
+          "name": "50GB",
+          "prices": {
+            "USD": 0.99,
+            "TRY": 12.99,
+            "EUR": 0.99,
+            "GBP": 0.99
+          }
+        },
+        {
+          "name": "200GB",
+          "prices": {
+            "USD": 2.99,
+            "TRY": 39.99,
+            "EUR": 2.99,
+            "GBP": 2.49
+          }
+        },
+        {
+          "name": "2TB",
+          "prices": {
+            "USD": 9.99,
+            "TRY": 129.99,
+            "EUR": 9.99,
+            "GBP": 8.99
+          }
+        }
+      ]
+    },
+    {
+      "id": "google_one",
+      "name": "Google One",
+      "domain": "google.com",
+      "category": "Cloud",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/google_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "microsoft_365",
+      "name": "Microsoft 365",
+      "domain": "microsoft.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/microsoft_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "adobe_cc",
+      "name": "Adobe Creative Cloud",
+      "domain": "adobe.com",
+      "category": "Design",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/adobe_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion Plus",
+      "domain": "notion.so",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/notion_so.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "domain": "dropbox.com",
+      "category": "Cloud",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dropbox_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom Pro",
+      "domain": "zoom.us",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/zoom_us.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "1password",
+      "name": "1Password",
+      "domain": "1password.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/1password_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lastpass",
+      "name": "LastPass",
+      "domain": "lastpass.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lastpass_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "dashlane",
+      "name": "Dashlane",
+      "domain": "dashlane.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/dashlane_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden Premium",
+      "domain": "bitwarden.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/bitwarden_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist Pro",
+      "domain": "todoist.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/todoist_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ticktick",
+      "name": "TickTick Premium",
+      "domain": "ticktick.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ticktick_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "monday",
+      "name": "Monday.com",
+      "domain": "monday.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/monday_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack Pro",
+      "domain": "slack.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/slack_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "domain": "evernote.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/evernote_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian Sync",
+      "domain": "obsidian.md",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/obsidian_md.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "loom",
+      "name": "Loom Pro",
+      "domain": "loom.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/loom_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma Professional",
+      "domain": "figma.com",
+      "category": "Design",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/figma_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "framer",
+      "name": "Framer Pro",
+      "domain": "framer.com",
+      "category": "Design",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/framer_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "sketch",
+      "name": "Sketch",
+      "domain": "sketch.com",
+      "category": "Design",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/sketch_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "craft_docs",
+      "name": "Craft Docs",
+      "domain": "craft.do",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/craft_do.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "superhuman",
+      "name": "Superhuman",
+      "domain": "superhuman.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/superhuman_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast Pro",
+      "domain": "raycast.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/raycast_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "setapp",
+      "name": "Setapp",
+      "domain": "setapp.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/setapp_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ps_plus",
+      "name": "PlayStation Plus",
+      "domain": "playstation.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/playstation_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "xbox_game_pass",
+      "name": "Xbox Game Pass",
+      "domain": "xbox.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/xbox_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "nintendo_online",
+      "name": "Nintendo Switch Online",
+      "domain": "nintendo.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nintendo_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "apple_arcade",
+      "name": "Apple Arcade",
+      "domain": "apple.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/apple_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "geforce_now",
+      "name": "GeForce NOW",
+      "domain": "nvidia.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nvidia_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "discord_nitro",
+      "name": "Discord Nitro",
+      "domain": "discord.com",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/discord_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "twitch_turbo",
+      "name": "Twitch Turbo",
+      "domain": "twitch.tv",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/twitch_tv.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ea_play",
+      "name": "EA Play",
+      "domain": "ea.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ea_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ubisoft_plus",
+      "name": "Ubisoft+",
+      "domain": "ubisoft.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ubisoft_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "wow_sub",
+      "name": "WoW Subscription",
+      "domain": "blizzard.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blizzard_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "humble_choice",
+      "name": "Humble Choice",
+      "domain": "humblebundle.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/humblebundle_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "roblox_premium",
+      "name": "Roblox Premium",
+      "domain": "roblox.com",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/roblox_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "minecraft_realms",
+      "name": "Minecraft Realms",
+      "domain": "minecraft.net",
+      "category": "Gaming",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/minecraft_net.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo Super",
+      "domain": "duolingo.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/duolingo_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "masterclass",
+      "name": "MasterClass",
+      "domain": "masterclass.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/masterclass_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "skillshare",
+      "name": "Skillshare",
+      "domain": "skillshare.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skillshare_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "coursera",
+      "name": "Coursera Plus",
+      "domain": "coursera.org",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/coursera_org.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "udemy",
+      "name": "Udemy Personal",
+      "domain": "udemy.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/udemy_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "brilliant",
+      "name": "Brilliant.org",
+      "domain": "brilliant.org",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/brilliant_org.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "codecademy",
+      "name": "Codecademy Pro",
+      "domain": "codecademy.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/codecademy_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "datacamp",
+      "name": "DataCamp",
+      "domain": "datacamp.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/datacamp_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "babbel",
+      "name": "Babbel",
+      "domain": "babbel.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/babbel_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "busuu",
+      "name": "Busuu Premium",
+      "domain": "busuu.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/busuu_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "cambly",
+      "name": "Cambly",
+      "domain": "cambly.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/cambly_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lingoda",
+      "name": "Lingoda",
+      "domain": "lingoda.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lingoda_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "memrise",
+      "name": "Memrise Pro",
+      "domain": "memrise.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/memrise_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "quizlet",
+      "name": "Quizlet Plus",
+      "domain": "quizlet.com",
+      "category": "Education",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/quizlet_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "headspace",
+      "name": "Headspace",
+      "domain": "headspace.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/headspace_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "domain": "calm.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/calm_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "strava",
+      "name": "Strava Premium",
+      "domain": "strava.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/strava_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "myfitnesspal",
+      "name": "MyFitnessPal Premium",
+      "domain": "myfitnesspal.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/myfitnesspal_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "flo",
+      "name": "Flo Premium",
+      "domain": "flo.health",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/flo_health.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "fitbit_premium",
+      "name": "Fitbit Premium",
+      "domain": "fitbit.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/fitbit_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "peloton",
+      "name": "Peloton App",
+      "domain": "onepeloton.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/onepeloton_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "nike_training",
+      "name": "Nike Training Club",
+      "domain": "nike.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nike_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "whoop",
+      "name": "Whoop Membership",
+      "domain": "whoop.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/whoop_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "sleep_cycle",
+      "name": "Sleep Cycle Premium",
+      "domain": "sleepcycle.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/sleepcycle_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "aura_health",
+      "name": "Aura Health",
+      "domain": "aurahealth.io",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/aurahealth_io.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "noom",
+      "name": "Noom",
+      "domain": "noom.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/noom_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "workout_trainer",
+      "name": "Workout Trainer",
+      "domain": "skimble.com",
+      "category": "Fitness",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/skimble_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "lifesum",
+      "name": "Lifesum Premium",
+      "domain": "lifesum.com",
+      "category": "Health",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/lifesum_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "linkedin_premium",
+      "name": "LinkedIn Premium",
+      "domain": "linkedin.com",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/linkedin_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "x_premium",
+      "name": "X (Twitter) Premium",
+      "domain": "x.com",
+      "category": "Social",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/x_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tinder_gold",
+      "name": "Tinder Gold",
+      "domain": "tinder.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/tinder_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "bumble_premium",
+      "name": "Bumble Premium",
+      "domain": "bumble.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/bumble_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "hinge_plus",
+      "name": "Hinge+",
+      "domain": "hinge.co",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hinge_co.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "grindr_unlimited",
+      "name": "Grindr Unlimited",
+      "domain": "grindr.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/grindr_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "uber_one",
+      "name": "Uber One",
+      "domain": "uber.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/uber_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "instacart_plus",
+      "name": "Instacart+",
+      "domain": "instacart.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/instacart_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "walmart_plus",
+      "name": "Walmart+",
+      "domain": "walmart.com",
+      "category": "Lifestyle",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/walmart_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "yemeksepeti_plus",
+      "name": "Yemeksepeti Plus",
+      "domain": "yemeksepeti.com",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/yemeksepeti_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "getir_plus",
+      "name": "Getir+",
+      "domain": "getir.com",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/getir_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "migros_money",
+      "name": "Money Pro",
+      "domain": "migros.com.tr",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/migros_com_tr.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "delivery_hero",
+      "name": "Delivery Hero",
+      "domain": "deliveryhero.com",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/deliveryhero_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "hellofresh",
+      "name": "HelloFresh",
+      "domain": "hellofresh.com",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/hellofresh_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "blue_apron",
+      "name": "Blue Apron",
+      "domain": "blueapron.com",
+      "category": "Food",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/blueapron_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "medium",
+      "name": "Medium Membership",
+      "domain": "medium.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/medium_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "nytimes",
+      "name": "NY Times",
+      "domain": "nytimes.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nytimes_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "wsj",
+      "name": "Wall Street Journal",
+      "domain": "wsj.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/wsj_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "economist",
+      "name": "The Economist",
+      "domain": "economist.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/economist_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "financial_times",
+      "name": "Financial Times",
+      "domain": "ft.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/ft_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "kindle_unlimited",
+      "name": "Kindle Unlimited",
+      "domain": "amazon.com",
+      "category": "Books",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/amazon_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "magzter",
+      "name": "Magzter Gold",
+      "domain": "magzter.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/magzter_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "readly",
+      "name": "Readly",
+      "domain": "readly.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/readly_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "pocket_premium",
+      "name": "Pocket Premium",
+      "domain": "getpocket.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/getpocket_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "instapaper_premium",
+      "name": "Instapaper Premium",
+      "domain": "instapaper.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/instapaper_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "the_athletic",
+      "name": "The Athletic",
+      "domain": "theathletic.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/theathletic_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "substack",
+      "name": "Substack Sub",
+      "domain": "substack.com",
+      "category": "News",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/substack_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "surfshark",
+      "name": "Surfshark VPN",
+      "domain": "surfshark.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/surfshark_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "domain": "nordvpn.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/nordvpn_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "domain": "expressvpn.com",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/expressvpn_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "proton_mail",
+      "name": "Proton Mail Plus",
+      "domain": "proton.me",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/proton_me.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "mullvad",
+      "name": "Mullvad VPN",
+      "domain": "mullvad.net",
+      "category": "Security",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/mullvad_net.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "strapi",
+      "name": "Strapi Cloud",
+      "domain": "strapi.io",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/strapi_io.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify Pro",
+      "domain": "netlify.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/netlify_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel Pro",
+      "domain": "vercel.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/vercel_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "domain": "digitalocean.com",
+      "category": "Productivity",
+      "logoUrl": "https://cdn.jsdelivr.net/gh/curiousvolt/subscription-catalog/logos/digitalocean_com.png",
+      "plans": [
+        {
+          "name": "Standard",
+          "prices": {
+            "USD": 0.0,
+            "TRY": 0.0,
+            "EUR": 0.0,
+            "GBP": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}
