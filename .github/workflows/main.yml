@@ -2,14 +2,15 @@ name: Monthly Logo Updater
 
 on:
   schedule:
+    # Her ayın 1'inde gece yarısı (00:00) çalışır
     - cron: '0 0 1 * *'
-  workflow_dispatch:
+  workflow_dispatch: # GitHub üzerinden manuel olarak tetikleme butonu
 
 jobs:
   update-logos:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Botun depoya push yapabilmesi için izin (Çok önemli!)
 
     steps:
       - name: Checkout Code
@@ -20,16 +21,23 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Requests
+      - name: Install Dependencies
         run: pip install requests beautifulsoup4
 
       - name: Run Logo Engine
+        env:
+          # GitHub Secrets'a eklediğin şifreyi buradan bota iletiyoruz
+          LOGO_DEV_TOKEN: ${{ secrets.LOGO_DEV_TOKEN }}
         run: python scraper.py
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add catalog.json logos/*
-          git commit -m "Auto-update: Service Logos [skip ci]" || exit 0
+          
+          # Yeni JSON dosyalarımızı ve logolar klasörünü izlemeye alıyoruz
+          git add logos/ logos_catalog.json cancellation_catalog.json
+          
+          # Değişiklik yoksa hata vermesini engelleyen "|| exit 0" mantığını koruduk
+          git commit -m "🤖 Auto-update: Service Logos and Cancel Links [skip ci]" || exit 0
           git push
