@@ -1,0 +1,1926 @@
+{
+  "lastUpdated": "2026-04-02T22:35:00.987255",
+  "total": 320,
+  "data": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "domain": "netflix.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Netflix+subscription"
+    },
+    {
+      "id": "disneyplus",
+      "name": "Disney+",
+      "domain": "disneyplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Disney%2B+subscription"
+    },
+    {
+      "id": "primevideo",
+      "name": "Amazon Prime Video",
+      "domain": "primevideo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Amazon%20Prime%20Video+subscription"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Premium",
+      "domain": "youtube.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+YouTube%20Premium+subscription"
+    },
+    {
+      "id": "apple_tv",
+      "name": "Apple TV+",
+      "domain": "tv.apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Apple%20TV%2B+subscription"
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "domain": "hulu.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hulu+subscription"
+    },
+    {
+      "id": "max",
+      "name": "Max (HBO)",
+      "domain": "max.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Max%20%28HBO%29+subscription"
+    },
+    {
+      "id": "paramount_plus",
+      "name": "Paramount+",
+      "domain": "paramountplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Paramount%2B+subscription"
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "domain": "peacocktv.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Peacock+subscription"
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "domain": "crunchyroll.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Crunchyroll+subscription"
+    },
+    {
+      "id": "mubi",
+      "name": "MUBI",
+      "domain": "mubi.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MUBI+subscription"
+    },
+    {
+      "id": "discovery_plus",
+      "name": "Discovery+",
+      "domain": "discoveryplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Discovery%2B+subscription"
+    },
+    {
+      "id": "fubo_tv",
+      "name": "FuboTV",
+      "domain": "fubo.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+FuboTV+subscription"
+    },
+    {
+      "id": "rakuten_tv",
+      "name": "Rakuten TV",
+      "domain": "rakuten.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Rakuten%20TV+subscription"
+    },
+    {
+      "id": "skyshowtime",
+      "name": "SkyShowtime",
+      "domain": "skyshowtime.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+SkyShowtime+subscription"
+    },
+    {
+      "id": "viaplay",
+      "name": "Viaplay",
+      "domain": "viaplay.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Viaplay+subscription"
+    },
+    {
+      "id": "blutv",
+      "name": "BluTV",
+      "domain": "blutv.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+BluTV+subscription"
+    },
+    {
+      "id": "exxen",
+      "name": "Exxen",
+      "domain": "exxen.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Exxen+subscription"
+    },
+    {
+      "id": "gain",
+      "name": "GAIN",
+      "domain": "gain.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GAIN+subscription"
+    },
+    {
+      "id": "ssport_plus",
+      "name": "S Sport Plus",
+      "domain": "ssportplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+S%20Sport%20Plus+subscription"
+    },
+    {
+      "id": "tod_tr",
+      "name": "TOD (beIN)",
+      "domain": "todtv.com.tr",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+TOD%20%28beIN%29+subscription"
+    },
+    {
+      "id": "tv_plus",
+      "name": "TV+",
+      "domain": "tvplus.com.tr",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+TV%2B+subscription"
+    },
+    {
+      "id": "tabii",
+      "name": "Tabii Premium",
+      "domain": "tabii.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tabii%20Premium+subscription"
+    },
+    {
+      "id": "viki",
+      "name": "Rakuten Viki",
+      "domain": "viki.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Rakuten%20Viki+subscription"
+    },
+    {
+      "id": "kanopy",
+      "name": "Kanopy",
+      "domain": "kanopy.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Kanopy+subscription"
+    },
+    {
+      "id": "curiositystream",
+      "name": "CuriosityStream",
+      "domain": "curiositystream.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+CuriosityStream+subscription"
+    },
+    {
+      "id": "britbox",
+      "name": "BritBox",
+      "domain": "britbox.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+BritBox+subscription"
+    },
+    {
+      "id": "shudder",
+      "name": "Shudder",
+      "domain": "shudder.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Shudder+subscription"
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "domain": "starz.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Starz+subscription"
+    },
+    {
+      "id": "mgm_plus",
+      "name": "MGM+",
+      "domain": "mgmplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MGM%2B+subscription"
+    },
+    {
+      "id": "acorn_tv",
+      "name": "Acorn TV",
+      "domain": "acorn.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Acorn%20TV+subscription"
+    },
+    {
+      "id": "amc_plus",
+      "name": "AMC+",
+      "domain": "amcplus.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+AMC%2B+subscription"
+    },
+    {
+      "id": "cineverse",
+      "name": "Cineverse",
+      "domain": "cineverse.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Cineverse+subscription"
+    },
+    {
+      "id": "dropout",
+      "name": "Dropout",
+      "domain": "dropout.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Dropout+subscription"
+    },
+    {
+      "id": "vimeo",
+      "name": "Vimeo",
+      "domain": "vimeo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Vimeo+subscription"
+    },
+    {
+      "id": "dailymotion",
+      "name": "Dailymotion",
+      "domain": "dailymotion.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Dailymotion+subscription"
+    },
+    {
+      "id": "twitch",
+      "name": "Twitch",
+      "domain": "twitch.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Twitch+subscription"
+    },
+    {
+      "id": "kick",
+      "name": "Kick",
+      "domain": "kick.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Kick+subscription"
+    },
+    {
+      "id": "plex",
+      "name": "Plex Pass",
+      "domain": "plex.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Plex%20Pass+subscription"
+    },
+    {
+      "id": "tivo",
+      "name": "TiVo",
+      "domain": "tivo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+TiVo+subscription"
+    },
+    {
+      "id": "directv",
+      "name": "DirecTV Stream",
+      "domain": "directv.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+DirecTV%20Stream+subscription"
+    },
+    {
+      "id": "sling_tv",
+      "name": "Sling TV",
+      "domain": "sling.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Sling%20TV+subscription"
+    },
+    {
+      "id": "philo",
+      "name": "Philo",
+      "domain": "philo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Philo+subscription"
+    },
+    {
+      "id": "pluto_tv",
+      "name": "Pluto TV",
+      "domain": "pluto.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pluto%20TV+subscription"
+    },
+    {
+      "id": "tubi",
+      "name": "Tubi TV",
+      "domain": "tubitv.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tubi%20TV+subscription"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT Plus",
+      "domain": "openai.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+ChatGPT%20Plus+subscription"
+    },
+    {
+      "id": "claude",
+      "name": "Claude Pro",
+      "domain": "anthropic.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Claude%20Pro+subscription"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini Advanced",
+      "domain": "gemini.google.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Gemini%20Advanced+subscription"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "domain": "midjourney.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Midjourney+subscription"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity Pro",
+      "domain": "perplexity.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Perplexity%20Pro+subscription"
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "domain": "grammarly.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Grammarly+subscription"
+    },
+    {
+      "id": "github_copilot",
+      "name": "GitHub Copilot",
+      "domain": "github.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GitHub%20Copilot+subscription"
+    },
+    {
+      "id": "notion_ai",
+      "name": "Notion AI",
+      "domain": "notion.so",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Notion%20AI+subscription"
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+ElevenLabs+subscription"
+    },
+    {
+      "id": "runway",
+      "name": "Runway Gen-3",
+      "domain": "runwayml.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Runway%20Gen-3+subscription"
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "domain": "heygen.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+HeyGen+subscription"
+    },
+    {
+      "id": "leonardo_ai",
+      "name": "Leonardo.ai",
+      "domain": "leonardo.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Leonardo.ai+subscription"
+    },
+    {
+      "id": "descript",
+      "name": "Descript",
+      "domain": "descript.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Descript+subscription"
+    },
+    {
+      "id": "luma_ai",
+      "name": "Luma Dream Machine",
+      "domain": "lumalabs.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Luma%20Dream%20Machine+subscription"
+    },
+    {
+      "id": "otter_ai",
+      "name": "Otter.ai",
+      "domain": "otter.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Otter.ai+subscription"
+    },
+    {
+      "id": "pika",
+      "name": "Pika Art",
+      "domain": "pika.art",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pika%20Art+subscription"
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper AI",
+      "domain": "jasper.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Jasper%20AI+subscription"
+    },
+    {
+      "id": "copy_ai",
+      "name": "Copy.ai",
+      "domain": "copy.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Copy.ai+subscription"
+    },
+    {
+      "id": "writesonic",
+      "name": "Writesonic",
+      "domain": "writesonic.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Writesonic+subscription"
+    },
+    {
+      "id": "fireflies",
+      "name": "Fireflies.ai",
+      "domain": "fireflies.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fireflies.ai+subscription"
+    },
+    {
+      "id": "suno",
+      "name": "Suno AI",
+      "domain": "suno.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Suno%20AI+subscription"
+    },
+    {
+      "id": "udio",
+      "name": "Udio",
+      "domain": "udio.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Udio+subscription"
+    },
+    {
+      "id": "krea",
+      "name": "Krea AI",
+      "domain": "krea.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Krea%20AI+subscription"
+    },
+    {
+      "id": "fal_ai",
+      "name": "Fal.ai",
+      "domain": "fal.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fal.ai+subscription"
+    },
+    {
+      "id": "replicate",
+      "name": "Replicate",
+      "domain": "replicate.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Replicate+subscription"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "domain": "huggingface.co",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hugging%20Face+subscription"
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "domain": "synthesia.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Synthesia+subscription"
+    },
+    {
+      "id": "character_ai",
+      "name": "Character.ai",
+      "domain": "character.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Character.ai+subscription"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "domain": "gamma.app",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Gamma+subscription"
+    },
+    {
+      "id": "tome",
+      "name": "Tome",
+      "domain": "tome.app",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tome+subscription"
+    },
+    {
+      "id": "poe",
+      "name": "Poe (Quora)",
+      "domain": "poe.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Poe%20%28Quora%29+subscription"
+    },
+    {
+      "id": "perplexity_pages",
+      "name": "Perplexity Pages",
+      "domain": "perplexity.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Perplexity%20Pages+subscription"
+    },
+    {
+      "id": "phind",
+      "name": "Phind",
+      "domain": "phind.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Phind+subscription"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "domain": "cursor.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Cursor+subscription"
+    },
+    {
+      "id": "warp",
+      "name": "Warp",
+      "domain": "warp.dev",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Warp+subscription"
+    },
+    {
+      "id": "sourcegraph",
+      "name": "Sourcegraph Cody",
+      "domain": "sourcegraph.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Sourcegraph%20Cody+subscription"
+    },
+    {
+      "id": "tabnine",
+      "name": "Tabnine",
+      "domain": "tabnine.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tabnine+subscription"
+    },
+    {
+      "id": "blackbox_ai",
+      "name": "Blackbox AI",
+      "domain": "blackbox.ai",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Blackbox%20AI+subscription"
+    },
+    {
+      "id": "replit_ghostwriter",
+      "name": "Replit Agent",
+      "domain": "replit.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Replit%20Agent+subscription"
+    },
+    {
+      "id": "adobe_firefly",
+      "name": "Adobe Firefly",
+      "domain": "adobe.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Adobe%20Firefly+subscription"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "domain": "spotify.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Spotify+subscription"
+    },
+    {
+      "id": "apple_music",
+      "name": "Apple Music",
+      "domain": "music.apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Apple%20Music+subscription"
+    },
+    {
+      "id": "youtube_music",
+      "name": "YouTube Music",
+      "domain": "music.youtube.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+YouTube%20Music+subscription"
+    },
+    {
+      "id": "tidal",
+      "name": "Tidal",
+      "domain": "tidal.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tidal+subscription"
+    },
+    {
+      "id": "deezer",
+      "name": "Deezer",
+      "domain": "deezer.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Deezer+subscription"
+    },
+    {
+      "id": "fizy",
+      "name": "Fizy",
+      "domain": "fizy.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fizy+subscription"
+    },
+    {
+      "id": "muud",
+      "name": "Muud",
+      "domain": "muud.com.tr",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Muud+subscription"
+    },
+    {
+      "id": "soundcloud",
+      "name": "SoundCloud Go",
+      "domain": "soundcloud.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+SoundCloud%20Go+subscription"
+    },
+    {
+      "id": "pandora",
+      "name": "Pandora Plus",
+      "domain": "pandora.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pandora%20Plus+subscription"
+    },
+    {
+      "id": "siriusxm",
+      "name": "SiriusXM",
+      "domain": "siriusxm.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+SiriusXM+subscription"
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "domain": "audible.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Audible+subscription"
+    },
+    {
+      "id": "storytel",
+      "name": "Storytel",
+      "domain": "storytel.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Storytel+subscription"
+    },
+    {
+      "id": "audioteka",
+      "name": "Audioteka",
+      "domain": "audioteka.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Audioteka+subscription"
+    },
+    {
+      "id": "blinkist",
+      "name": "Blinkist",
+      "domain": "blinkist.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Blinkist+subscription"
+    },
+    {
+      "id": "pocket_casts",
+      "name": "Pocket Casts",
+      "domain": "pocketcasts.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pocket%20Casts+subscription"
+    },
+    {
+      "id": "overcast",
+      "name": "Overcast Premium",
+      "domain": "overcast.fm",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Overcast%20Premium+subscription"
+    },
+    {
+      "id": "mixcloud",
+      "name": "Mixcloud Select",
+      "domain": "mixcloud.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Mixcloud%20Select+subscription"
+    },
+    {
+      "id": "bandcamp",
+      "name": "Bandcamp",
+      "domain": "bandcamp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bandcamp+subscription"
+    },
+    {
+      "id": "idagio",
+      "name": "IDAGIO",
+      "domain": "idagio.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+IDAGIO+subscription"
+    },
+    {
+      "id": "primephonic",
+      "name": "Primephonic",
+      "domain": "apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Primephonic+subscription"
+    },
+    {
+      "id": "lastfm",
+      "name": "Last.fm Pro",
+      "domain": "last.fm",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Last.fm%20Pro+subscription"
+    },
+    {
+      "id": "ultimate_guitar",
+      "name": "Ultimate Guitar Pro",
+      "domain": "ultimate-guitar.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Ultimate%20Guitar%20Pro+subscription"
+    },
+    {
+      "id": "yousician",
+      "name": "Yousician",
+      "domain": "yousician.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Yousician+subscription"
+    },
+    {
+      "id": "flowkey",
+      "name": "flowkey",
+      "domain": "flowkey.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+flowkey+subscription"
+    },
+    {
+      "id": "simply_piano",
+      "name": "Simply Piano",
+      "domain": "joytunes.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Simply%20Piano+subscription"
+    },
+    {
+      "id": "splice",
+      "name": "Splice",
+      "domain": "splice.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Splice+subscription"
+    },
+    {
+      "id": "loopcloud",
+      "name": "Loopcloud",
+      "domain": "loopcloud.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Loopcloud+subscription"
+    },
+    {
+      "id": "beatport",
+      "name": "Beatport Streaming",
+      "domain": "beatport.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Beatport%20Streaming+subscription"
+    },
+    {
+      "id": "shazam",
+      "name": "Shazam",
+      "domain": "shazam.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Shazam+subscription"
+    },
+    {
+      "id": "tuner",
+      "name": "Tuner Radio",
+      "domain": "tuner.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tuner%20Radio+subscription"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "domain": "notion.so",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Notion+subscription"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "domain": "slack.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Slack+subscription"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "domain": "zoom.us",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Zoom+subscription"
+    },
+    {
+      "id": "microsoft_365",
+      "name": "Microsoft 365",
+      "domain": "microsoft.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Microsoft%20365+subscription"
+    },
+    {
+      "id": "google_workspace",
+      "name": "Google Workspace",
+      "domain": "workspace.google.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Google%20Workspace+subscription"
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "domain": "trello.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Trello+subscription"
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "domain": "asana.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Asana+subscription"
+    },
+    {
+      "id": "monday",
+      "name": "Monday.com",
+      "domain": "monday.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Monday.com+subscription"
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "domain": "clickup.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+ClickUp+subscription"
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "domain": "evernote.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Evernote+subscription"
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian Sync",
+      "domain": "obsidian.md",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Obsidian%20Sync+subscription"
+    },
+    {
+      "id": "todoist",
+      "name": "Todoist",
+      "domain": "todoist.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Todoist+subscription"
+    },
+    {
+      "id": "ticktick",
+      "name": "TickTick",
+      "domain": "ticktick.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+TickTick+subscription"
+    },
+    {
+      "id": "calendly",
+      "name": "Calendly",
+      "domain": "calendly.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Calendly+subscription"
+    },
+    {
+      "id": "loom",
+      "name": "Loom",
+      "domain": "loom.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Loom+subscription"
+    },
+    {
+      "id": "miro",
+      "name": "Miro",
+      "domain": "miro.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Miro+subscription"
+    },
+    {
+      "id": "mural",
+      "name": "Mural",
+      "domain": "mural.co",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Mural+subscription"
+    },
+    {
+      "id": "lucidchart",
+      "name": "Lucidchart",
+      "domain": "lucid.co",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Lucidchart+subscription"
+    },
+    {
+      "id": "basecamp",
+      "name": "Basecamp",
+      "domain": "basecamp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Basecamp+subscription"
+    },
+    {
+      "id": "superhuman",
+      "name": "Superhuman",
+      "domain": "superhuman.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Superhuman+subscription"
+    },
+    {
+      "id": "raycast",
+      "name": "Raycast Pro",
+      "domain": "raycast.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Raycast%20Pro+subscription"
+    },
+    {
+      "id": "setapp",
+      "name": "Setapp",
+      "domain": "setapp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Setapp+subscription"
+    },
+    {
+      "id": "craft_docs",
+      "name": "Craft Docs",
+      "domain": "craft.do",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Craft%20Docs+subscription"
+    },
+    {
+      "id": "anytype",
+      "name": "Anytype",
+      "domain": "anytype.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Anytype+subscription"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "domain": "linear.app",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Linear+subscription"
+    },
+    {
+      "id": "front",
+      "name": "Front",
+      "domain": "front.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Front+subscription"
+    },
+    {
+      "id": "intercom",
+      "name": "Intercom",
+      "domain": "intercom.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Intercom+subscription"
+    },
+    {
+      "id": "zendesk",
+      "name": "Zendesk",
+      "domain": "zendesk.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Zendesk+subscription"
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "domain": "hubspot.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+HubSpot+subscription"
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "domain": "salesforce.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Salesforce+subscription"
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "domain": "airtable.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Airtable+subscription"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "domain": "zapier.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Zapier+subscription"
+    },
+    {
+      "id": "make_com",
+      "name": "Make (Integromat)",
+      "domain": "make.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Make%20%28Integromat%29+subscription"
+    },
+    {
+      "id": "retool",
+      "name": "Retool",
+      "domain": "retool.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Retool+subscription"
+    },
+    {
+      "id": "bubble",
+      "name": "Bubble",
+      "domain": "bubble.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bubble+subscription"
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "domain": "webflow.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Webflow+subscription"
+    },
+    {
+      "id": "framer",
+      "name": "Framer",
+      "domain": "framer.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Framer+subscription"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "domain": "figma.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Figma+subscription"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "domain": "canva.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Canva+subscription"
+    },
+    {
+      "id": "adobe_cc",
+      "name": "Adobe Creative Cloud",
+      "domain": "adobe.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Adobe%20Creative%20Cloud+subscription"
+    },
+    {
+      "id": "sketch",
+      "name": "Sketch",
+      "domain": "sketch.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Sketch+subscription"
+    },
+    {
+      "id": "dribbble",
+      "name": "Dribbble Pro",
+      "domain": "dribbble.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Dribbble%20Pro+subscription"
+    },
+    {
+      "id": "behance",
+      "name": "Behance",
+      "domain": "behance.net",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Behance+subscription"
+    },
+    {
+      "id": "envato_elements",
+      "name": "Envato Elements",
+      "domain": "elements.envato.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Envato%20Elements+subscription"
+    },
+    {
+      "id": "shutterstock",
+      "name": "Shutterstock",
+      "domain": "shutterstock.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Shutterstock+subscription"
+    },
+    {
+      "id": "ps_plus",
+      "name": "PlayStation Plus",
+      "domain": "playstation.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+PlayStation%20Plus+subscription"
+    },
+    {
+      "id": "xbox_game_pass",
+      "name": "Xbox Game Pass",
+      "domain": "xbox.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Xbox%20Game%20Pass+subscription"
+    },
+    {
+      "id": "nintendo_online",
+      "name": "Nintendo Switch Online",
+      "domain": "nintendo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Nintendo%20Switch%20Online+subscription"
+    },
+    {
+      "id": "apple_arcade",
+      "name": "Apple Arcade",
+      "domain": "apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Apple%20Arcade+subscription"
+    },
+    {
+      "id": "geforce_now",
+      "name": "GeForce NOW",
+      "domain": "nvidia.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GeForce%20NOW+subscription"
+    },
+    {
+      "id": "discord_nitro",
+      "name": "Discord Nitro",
+      "domain": "discord.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Discord%20Nitro+subscription"
+    },
+    {
+      "id": "twitch_turbo",
+      "name": "Twitch Turbo",
+      "domain": "twitch.tv",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Twitch%20Turbo+subscription"
+    },
+    {
+      "id": "ea_play",
+      "name": "EA Play",
+      "domain": "ea.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+EA%20Play+subscription"
+    },
+    {
+      "id": "ubisoft_plus",
+      "name": "Ubisoft+",
+      "domain": "ubisoft.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Ubisoft%2B+subscription"
+    },
+    {
+      "id": "wow_sub",
+      "name": "World of Warcraft",
+      "domain": "blizzard.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+World%20of%20Warcraft+subscription"
+    },
+    {
+      "id": "roblox_premium",
+      "name": "Roblox Premium",
+      "domain": "roblox.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Roblox%20Premium+subscription"
+    },
+    {
+      "id": "humble_choice",
+      "name": "Humble Choice",
+      "domain": "humblebundle.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Humble%20Choice+subscription"
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "domain": "steampowered.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Steam+subscription"
+    },
+    {
+      "id": "epic_games",
+      "name": "Epic Games",
+      "domain": "epicgames.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Epic%20Games+subscription"
+    },
+    {
+      "id": "battlenet",
+      "name": "Battle.net",
+      "domain": "blizzard.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Battle.net+subscription"
+    },
+    {
+      "id": "riot_games",
+      "name": "Riot Games",
+      "domain": "riotgames.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Riot%20Games+subscription"
+    },
+    {
+      "id": "minecraft_realms",
+      "name": "Minecraft Realms",
+      "domain": "minecraft.net",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Minecraft%20Realms+subscription"
+    },
+    {
+      "id": "gog",
+      "name": "GOG.com",
+      "domain": "gog.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GOG.com+subscription"
+    },
+    {
+      "id": "itch_io",
+      "name": "itch.io",
+      "domain": "itch.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+itch.io+subscription"
+    },
+    {
+      "id": "chess_com",
+      "name": "Chess.com Gold",
+      "domain": "chess.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Chess.com%20Gold+subscription"
+    },
+    {
+      "id": "lichess",
+      "name": "Lichess Patron",
+      "domain": "lichess.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Lichess%20Patron+subscription"
+    },
+    {
+      "id": "tinder_gold",
+      "name": "Tinder Gold",
+      "domain": "tinder.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tinder%20Gold+subscription"
+    },
+    {
+      "id": "bumble_premium",
+      "name": "Bumble Premium",
+      "domain": "bumble.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bumble%20Premium+subscription"
+    },
+    {
+      "id": "hinge_plus",
+      "name": "Hinge+",
+      "domain": "hinge.co",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hinge%2B+subscription"
+    },
+    {
+      "id": "grindr_unlimited",
+      "name": "Grindr Unlimited",
+      "domain": "grindr.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Grindr%20Unlimited+subscription"
+    },
+    {
+      "id": "linkedin_premium",
+      "name": "LinkedIn Premium",
+      "domain": "linkedin.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+LinkedIn%20Premium+subscription"
+    },
+    {
+      "id": "x_premium",
+      "name": "X Premium",
+      "domain": "x.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+X%20Premium+subscription"
+    },
+    {
+      "id": "reddit_premium",
+      "name": "Reddit Premium",
+      "domain": "reddit.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Reddit%20Premium+subscription"
+    },
+    {
+      "id": "strava_premium",
+      "name": "Strava Premium",
+      "domain": "strava.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Strava%20Premium+subscription"
+    },
+    {
+      "id": "komoot",
+      "name": "Komoot Premium",
+      "domain": "komoot.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Komoot%20Premium+subscription"
+    },
+    {
+      "id": "alltrails",
+      "name": "AllTrails+",
+      "domain": "alltrails.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+AllTrails%2B+subscription"
+    },
+    {
+      "id": "uber_one",
+      "name": "Uber One",
+      "domain": "uber.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Uber%20One+subscription"
+    },
+    {
+      "id": "lyft_pink",
+      "name": "Lyft Pink",
+      "domain": "lyft.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Lyft%20Pink+subscription"
+    },
+    {
+      "id": "instacart_plus",
+      "name": "Instacart+",
+      "domain": "instacart.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Instacart%2B+subscription"
+    },
+    {
+      "id": "doorDash_pass",
+      "name": "DashPass",
+      "domain": "doordash.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+DashPass+subscription"
+    },
+    {
+      "id": "delivery_hero",
+      "name": "Delivery Hero",
+      "domain": "deliveryhero.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Delivery%20Hero+subscription"
+    },
+    {
+      "id": "yemeksepeti",
+      "name": "Yemeksepeti Plus",
+      "domain": "yemeksepeti.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Yemeksepeti%20Plus+subscription"
+    },
+    {
+      "id": "getir",
+      "name": "Getir",
+      "domain": "getir.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Getir+subscription"
+    },
+    {
+      "id": "hellofresh",
+      "name": "HelloFresh",
+      "domain": "hellofresh.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+HelloFresh+subscription"
+    },
+    {
+      "id": "blue_apron",
+      "name": "Blue Apron",
+      "domain": "blueapron.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Blue%20Apron+subscription"
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud+",
+      "domain": "apple.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+iCloud%2B+subscription"
+    },
+    {
+      "id": "google_one",
+      "name": "Google One",
+      "domain": "google.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Google%20One+subscription"
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "domain": "dropbox.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Dropbox+subscription"
+    },
+    {
+      "id": "box_com",
+      "name": "Box",
+      "domain": "box.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Box+subscription"
+    },
+    {
+      "id": "onedrive",
+      "name": "OneDrive",
+      "domain": "microsoft.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+OneDrive+subscription"
+    },
+    {
+      "id": "pcloud",
+      "name": "pCloud",
+      "domain": "pcloud.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+pCloud+subscription"
+    },
+    {
+      "id": "mega",
+      "name": "MEGA",
+      "domain": "mega.nz",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MEGA+subscription"
+    },
+    {
+      "id": "backblaze",
+      "name": "Backblaze",
+      "domain": "backblaze.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Backblaze+subscription"
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "domain": "aws.amazon.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Amazon%20Web%20Services+subscription"
+    },
+    {
+      "id": "google_cloud",
+      "name": "Google Cloud",
+      "domain": "cloud.google.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Google%20Cloud+subscription"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "domain": "azure.microsoft.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Microsoft%20Azure+subscription"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "domain": "digitalocean.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+DigitalOcean+subscription"
+    },
+    {
+      "id": "linode",
+      "name": "Linode (Akamai)",
+      "domain": "linode.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Linode%20%28Akamai%29+subscription"
+    },
+    {
+      "id": "vultr",
+      "name": "Vultr",
+      "domain": "vultr.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Vultr+subscription"
+    },
+    {
+      "id": "heroku",
+      "name": "Heroku",
+      "domain": "heroku.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Heroku+subscription"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "domain": "vercel.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Vercel+subscription"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "domain": "netlify.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Netlify+subscription"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "domain": "supabase.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Supabase+subscription"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase",
+      "domain": "firebase.google.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Firebase+subscription"
+    },
+    {
+      "id": "mongodb_atlas",
+      "name": "MongoDB Atlas",
+      "domain": "mongodb.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MongoDB%20Atlas+subscription"
+    },
+    {
+      "id": "planetscale",
+      "name": "PlanetScale",
+      "domain": "planetscale.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+PlanetScale+subscription"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "domain": "cloudflare.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Cloudflare+subscription"
+    },
+    {
+      "id": "fastly",
+      "name": "Fastly",
+      "domain": "fastly.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fastly+subscription"
+    },
+    {
+      "id": "github",
+      "name": "GitHub Pro",
+      "domain": "github.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GitHub%20Pro+subscription"
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab Premium",
+      "domain": "gitlab.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+GitLab%20Premium+subscription"
+    },
+    {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "domain": "atlassian.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bitbucket+subscription"
+    },
+    {
+      "id": "docker",
+      "name": "Docker Personal",
+      "domain": "docker.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Docker%20Personal+subscription"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "domain": "kubernetes.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Kubernetes+subscription"
+    },
+    {
+      "id": "terraform",
+      "name": "HashiCorp Terraform",
+      "domain": "hashicorp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+HashiCorp%20Terraform+subscription"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "domain": "sentry.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Sentry+subscription"
+    },
+    {
+      "id": "datadog",
+      "name": "Datadog",
+      "domain": "datadoghq.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Datadog+subscription"
+    },
+    {
+      "id": "new_relic",
+      "name": "New Relic",
+      "domain": "newrelic.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+New%20Relic+subscription"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "domain": "postman.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Postman+subscription"
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "domain": "insomnia.rest",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Insomnia+subscription"
+    },
+    {
+      "id": "strapi",
+      "name": "Strapi Cloud",
+      "domain": "strapi.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Strapi%20Cloud+subscription"
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost(Pro)",
+      "domain": "ghost.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Ghost%28Pro%29+subscription"
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress.com",
+      "domain": "wordpress.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+WordPress.com+subscription"
+    },
+    {
+      "id": "squarespace",
+      "name": "Squarespace",
+      "domain": "squarespace.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Squarespace+subscription"
+    },
+    {
+      "id": "wix",
+      "name": "Wix",
+      "domain": "wix.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Wix+subscription"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "domain": "shopify.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Shopify+subscription"
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "domain": "nordvpn.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+NordVPN+subscription"
+    },
+    {
+      "id": "surfshark",
+      "name": "Surfshark",
+      "domain": "surfshark.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Surfshark+subscription"
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "domain": "expressvpn.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+ExpressVPN+subscription"
+    },
+    {
+      "id": "mullvad",
+      "name": "Mullvad VPN",
+      "domain": "mullvad.net",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Mullvad%20VPN+subscription"
+    },
+    {
+      "id": "proton_mail",
+      "name": "Proton Mail",
+      "domain": "proton.me",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Proton%20Mail+subscription"
+    },
+    {
+      "id": "proton_vpn",
+      "name": "Proton VPN",
+      "domain": "protonvpn.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Proton%20VPN+subscription"
+    },
+    {
+      "id": "tutanota",
+      "name": "Tuta Mail",
+      "domain": "tuta.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tuta%20Mail+subscription"
+    },
+    {
+      "id": "1password",
+      "name": "1Password",
+      "domain": "1password.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+1Password+subscription"
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden",
+      "domain": "bitwarden.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bitwarden+subscription"
+    },
+    {
+      "id": "dashlane",
+      "name": "Dashlane",
+      "domain": "dashlane.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Dashlane+subscription"
+    },
+    {
+      "id": "lastpass",
+      "name": "LastPass",
+      "domain": "lastpass.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+LastPass+subscription"
+    },
+    {
+      "id": "malwarebytes",
+      "name": "Malwarebytes",
+      "domain": "malwarebytes.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Malwarebytes+subscription"
+    },
+    {
+      "id": "bitdefender",
+      "name": "Bitdefender",
+      "domain": "bitdefender.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Bitdefender+subscription"
+    },
+    {
+      "id": "norton",
+      "name": "Norton 360",
+      "domain": "norton.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Norton%20360+subscription"
+    },
+    {
+      "id": "mcafee",
+      "name": "McAfee",
+      "domain": "mcafee.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+McAfee+subscription"
+    },
+    {
+      "id": "kaspersky",
+      "name": "Kaspersky",
+      "domain": "kaspersky.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Kaspersky+subscription"
+    },
+    {
+      "id": "duckduckgo",
+      "name": "DuckDuckGo",
+      "domain": "duckduckgo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+DuckDuckGo+subscription"
+    },
+    {
+      "id": "brave",
+      "name": "Brave Browser",
+      "domain": "brave.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Brave%20Browser+subscription"
+    },
+    {
+      "id": "tor_project",
+      "name": "Tor Project",
+      "domain": "torproject.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tor%20Project+subscription"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "domain": "tailscale.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tailscale+subscription"
+    },
+    {
+      "id": "nextdns",
+      "name": "NextDNS",
+      "domain": "nextdns.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+NextDNS+subscription"
+    },
+    {
+      "id": "adguard",
+      "name": "AdGuard",
+      "domain": "adguard.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+AdGuard+subscription"
+    },
+    {
+      "id": "pivpn",
+      "name": "Pi-VPN",
+      "domain": "pivpn.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pi-VPN+subscription"
+    },
+    {
+      "id": "little_snitch",
+      "name": "Little Snitch",
+      "domain": "obdev.at",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Little%20Snitch+subscription"
+    },
+    {
+      "id": "cleanmymac",
+      "name": "CleanMyMac X",
+      "domain": "macpaw.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+CleanMyMac%20X+subscription"
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "domain": "duolingo.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Duolingo+subscription"
+    },
+    {
+      "id": "babbel",
+      "name": "Babbel",
+      "domain": "babbel.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Babbel+subscription"
+    },
+    {
+      "id": "busuu",
+      "name": "Busuu",
+      "domain": "busuu.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Busuu+subscription"
+    },
+    {
+      "id": "memrise",
+      "name": "Memrise",
+      "domain": "memrise.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Memrise+subscription"
+    },
+    {
+      "id": "rosetta_stone",
+      "name": "Rosetta Stone",
+      "domain": "rosettastone.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Rosetta%20Stone+subscription"
+    },
+    {
+      "id": "masterclass",
+      "name": "MasterClass",
+      "domain": "masterclass.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MasterClass+subscription"
+    },
+    {
+      "id": "skillshare",
+      "name": "Skillshare",
+      "domain": "skillshare.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Skillshare+subscription"
+    },
+    {
+      "id": "coursera",
+      "name": "Coursera",
+      "domain": "coursera.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Coursera+subscription"
+    },
+    {
+      "id": "udemy",
+      "name": "Udemy",
+      "domain": "udemy.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Udemy+subscription"
+    },
+    {
+      "id": "edx",
+      "name": "edX",
+      "domain": "edx.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+edX+subscription"
+    },
+    {
+      "id": "brilliant",
+      "name": "Brilliant.org",
+      "domain": "brilliant.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Brilliant.org+subscription"
+    },
+    {
+      "id": "khan_academy",
+      "name": "Khan Academy",
+      "domain": "khanacademy.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Khan%20Academy+subscription"
+    },
+    {
+      "id": "codecademy",
+      "name": "Codecademy",
+      "domain": "codecademy.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Codecademy+subscription"
+    },
+    {
+      "id": "datacamp",
+      "name": "DataCamp",
+      "domain": "datacamp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+DataCamp+subscription"
+    },
+    {
+      "id": "freecodecamp",
+      "name": "freeCodeCamp",
+      "domain": "freecodecamp.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+freeCodeCamp+subscription"
+    },
+    {
+      "id": "pluralsight",
+      "name": "Pluralsight",
+      "domain": "pluralsight.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Pluralsight+subscription"
+    },
+    {
+      "id": "linkedin_learning",
+      "name": "LinkedIn Learning",
+      "domain": "linkedin.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+LinkedIn%20Learning+subscription"
+    },
+    {
+      "id": "udacity",
+      "name": "Udacity",
+      "domain": "udacity.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Udacity+subscription"
+    },
+    {
+      "id": "brilliant_ai",
+      "name": "Brilliant AI",
+      "domain": "brilliant.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Brilliant%20AI+subscription"
+    },
+    {
+      "id": "quizlet",
+      "name": "Quizlet",
+      "domain": "quizlet.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Quizlet+subscription"
+    },
+    {
+      "id": "anki",
+      "name": "Anki",
+      "domain": "ankisrs.net",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Anki+subscription"
+    },
+    {
+      "id": "wolfram_alpha",
+      "name": "Wolfram Alpha Pro",
+      "domain": "wolframalpha.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Wolfram%20Alpha%20Pro+subscription"
+    },
+    {
+      "id": "medium_membership",
+      "name": "Medium",
+      "domain": "medium.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Medium+subscription"
+    },
+    {
+      "id": "substack",
+      "name": "Substack",
+      "domain": "substack.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Substack+subscription"
+    },
+    {
+      "id": "the_economist",
+      "name": "The Economist",
+      "domain": "economist.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+The%20Economist+subscription"
+    },
+    {
+      "id": "ny_times",
+      "name": "The New York Times",
+      "domain": "nytimes.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+The%20New%20York%20Times+subscription"
+    },
+    {
+      "id": "wsj",
+      "name": "Wall Street Journal",
+      "domain": "wsj.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Wall%20Street%20Journal+subscription"
+    },
+    {
+      "id": "the_atlantic",
+      "name": "The Atlantic",
+      "domain": "theatlantic.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+The%20Atlantic+subscription"
+    },
+    {
+      "id": "wired",
+      "name": "Wired",
+      "domain": "wired.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Wired+subscription"
+    },
+    {
+      "id": "hbr",
+      "name": "Harvard Business Review",
+      "domain": "hbr.org",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Harvard%20Business%20Review+subscription"
+    },
+    {
+      "id": "headspace",
+      "name": "Headspace",
+      "domain": "headspace.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Headspace+subscription"
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "domain": "calm.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Calm+subscription"
+    },
+    {
+      "id": "insight_timer",
+      "name": "Insight Timer",
+      "domain": "insighttimer.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Insight%20Timer+subscription"
+    },
+    {
+      "id": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "domain": "myfitnesspal.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+MyFitnessPal+subscription"
+    },
+    {
+      "id": "lifesum",
+      "name": "Lifesum",
+      "domain": "lifesum.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Lifesum+subscription"
+    },
+    {
+      "id": "noom",
+      "name": "Noom",
+      "domain": "noom.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Noom+subscription"
+    },
+    {
+      "id": "fitbit_premium",
+      "name": "Fitbit Premium",
+      "domain": "fitbit.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Fitbit%20Premium+subscription"
+    },
+    {
+      "id": "whoop",
+      "name": "Whoop",
+      "domain": "whoop.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Whoop+subscription"
+    },
+    {
+      "id": "peloton",
+      "name": "Peloton",
+      "domain": "onepeloton.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Peloton+subscription"
+    },
+    {
+      "id": "nike_training",
+      "name": "Nike Training Club",
+      "domain": "nike.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Nike%20Training%20Club+subscription"
+    },
+    {
+      "id": "adidas_running",
+      "name": "Adidas Running",
+      "domain": "runtastic.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Adidas%20Running+subscription"
+    },
+    {
+      "id": "flo",
+      "name": "Flo Premium",
+      "domain": "flo.health",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Flo%20Premium+subscription"
+    },
+    {
+      "id": "clue",
+      "name": "Clue Plus",
+      "domain": "helloclue.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Clue%20Plus+subscription"
+    },
+    {
+      "id": "sleep_cycle",
+      "name": "Sleep Cycle",
+      "domain": "sleepcycle.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Sleep%20Cycle+subscription"
+    },
+    {
+      "id": "aura_health",
+      "name": "Aura Health",
+      "domain": "aurahealth.io",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Aura%20Health+subscription"
+    },
+    {
+      "id": "betterhelp",
+      "name": "BetterHelp",
+      "domain": "betterhelp.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+BetterHelp+subscription"
+    },
+    {
+      "id": "talkspace",
+      "name": "Talkspace",
+      "domain": "talkspace.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Talkspace+subscription"
+    },
+    {
+      "id": "zocdoc",
+      "name": "Zocdoc",
+      "domain": "zocdoc.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Zocdoc+subscription"
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "domain": "airbnb.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Airbnb+subscription"
+    },
+    {
+      "id": "booking_com",
+      "name": "Booking.com",
+      "domain": "booking.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Booking.com+subscription"
+    },
+    {
+      "id": "expedia",
+      "name": "Expedia",
+      "domain": "expedia.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Expedia+subscription"
+    },
+    {
+      "id": "tripadvisor",
+      "name": "Tripadvisor Plus",
+      "domain": "tripadvisor.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Tripadvisor%20Plus+subscription"
+    },
+    {
+      "id": "priority_pass",
+      "name": "Priority Pass",
+      "domain": "prioritypass.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Priority%20Pass+subscription"
+    },
+    {
+      "id": "hopper",
+      "name": "Hopper",
+      "domain": "hopper.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+Hopper+subscription"
+    },
+    {
+      "id": "kayak",
+      "name": "KAYAK",
+      "domain": "kayak.com",
+      "cancelUrl": "https://www.google.com/search?q=how+to+cancel+KAYAK+subscription"
+    }
+  ]
+}
