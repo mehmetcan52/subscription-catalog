@@ -12,12 +12,12 @@ import urllib.parse
 GH_USER = "mehmetcan52"
 GH_REPO = "subscription-catalog"
 
-# GÜVENLİK GÜNCELLEMESİ: API anahtarını koddan çıkardık, sistemden çekecek.
+# GÜVENLİK: Logo.dev API anahtarını GitHub Actions (veya ortam değişkenlerinden) çekiyoruz
 LOGO_DEV_TOKEN = os.getenv("LOGO_DEV_TOKEN")
 
-# --- FULL SERVICES LIST (210 ENTRIES) ---
+# --- FULL SERVICES LIST ---
 SERVICES = [
-    # --- VIDEO & STREAMING (45) ---
+    # --- VIDEO & STREAMING ---
     {"id": "netflix", "name": "Netflix", "domain": "netflix.com", "category": "Video"},
     {"id": "disneyplus", "name": "Disney+", "domain": "disneyplus.com", "category": "Video"},
     {"id": "primevideo", "name": "Amazon Prime Video", "domain": "primevideo.com", "category": "Video"},
@@ -63,8 +63,10 @@ SERVICES = [
     {"id": "philo", "name": "Philo", "domain": "philo.com", "category": "Video"},
     {"id": "pluto_tv", "name": "Pluto TV", "domain": "pluto.tv", "category": "Video"},
     {"id": "tubi", "name": "Tubi TV", "domain": "tubitv.com", "category": "Video"},
+    {"id": "dsmart_go", "name": "D-Smart GO", "domain": "dsmartgo.com.tr", "category": "Video"},
+    {"id": "tivibu_go", "name": "Tivibu GO", "domain": "tivibu.com.tr", "category": "Video"},
 
-    # --- ARTIFICIAL INTELLIGENCE (40) ---
+    # --- ARTIFICIAL INTELLIGENCE ---
     {"id": "chatgpt", "name": "ChatGPT Plus", "domain": "openai.com", "category": "AI"},
     {"id": "claude", "name": "Claude Pro", "domain": "anthropic.com", "category": "AI"},
     {"id": "gemini", "name": "Gemini Advanced", "domain": "gemini.google.com", "category": "AI"},
@@ -106,7 +108,7 @@ SERVICES = [
     {"id": "replit_ghostwriter", "name": "Replit Agent", "domain": "replit.com", "category": "AI"},
     {"id": "adobe_firefly", "name": "Adobe Firefly", "domain": "adobe.com", "category": "AI"},
 
-    # --- MUSIC & AUDIO (30) ---
+    # --- MUSIC & AUDIO ---
     {"id": "spotify", "name": "Spotify", "domain": "spotify.com", "category": "Music"},
     {"id": "apple_music", "name": "Apple Music", "domain": "music.apple.com", "category": "Music"},
     {"id": "youtube_music", "name": "YouTube Music", "domain": "music.youtube.com", "category": "Music"},
@@ -138,7 +140,7 @@ SERVICES = [
     {"id": "shazam", "name": "Shazam", "domain": "shazam.com", "category": "Music"},
     {"id": "tuner", "name": "Tuner Radio", "domain": "tuner.com", "category": "Music"},
 
-    # --- PRODUCTIVITY & COLLABORATION (45) ---
+    # --- PRODUCTIVITY & COLLABORATION ---
     {"id": "notion", "name": "Notion", "domain": "notion.so", "category": "Productivity"},
     {"id": "slack", "name": "Slack", "domain": "slack.com", "category": "Productivity"},
     {"id": "zoom", "name": "Zoom", "domain": "zoom.us", "category": "Productivity"},
@@ -185,7 +187,7 @@ SERVICES = [
     {"id": "envato_elements", "name": "Envato Elements", "domain": "elements.envato.com", "category": "Design"},
     {"id": "shutterstock", "name": "Shutterstock", "domain": "shutterstock.com", "category": "Design"},
 
-    # --- GAMING & SOCIAL (40) ---
+    # --- GAMING & SOCIAL & CREATORS ---
     {"id": "ps_plus", "name": "PlayStation Plus", "domain": "playstation.com", "category": "Gaming"},
     {"id": "xbox_game_pass", "name": "Xbox Game Pass", "domain": "xbox.com", "category": "Gaming"},
     {"id": "nintendo_online", "name": "Nintendo Switch Online", "domain": "nintendo.com", "category": "Gaming"},
@@ -207,16 +209,19 @@ SERVICES = [
     {"id": "itch_io", "name": "itch.io", "domain": "itch.io", "category": "Gaming"},
     {"id": "chess_com", "name": "Chess.com Gold", "domain": "chess.com", "category": "Gaming"},
     {"id": "lichess", "name": "Lichess Patron", "domain": "lichess.org", "category": "Gaming"},
+    {"id": "fortnite_crew", "name": "Fortnite Crew", "domain": "fortnite.com", "category": "Gaming"},
+    {"id": "linkedin_premium", "name": "LinkedIn Premium", "domain": "linkedin.com", "category": "Social"},
+    {"id": "x_premium", "name": "X Premium", "domain": "x.com", "category": "Social"},
+    {"id": "reddit_premium", "name": "Reddit Premium", "domain": "reddit.com", "category": "Social"},
+    {"id": "patreon", "name": "Patreon", "domain": "patreon.com", "category": "Social"},
+    {"id": "onlyfans", "name": "OnlyFans", "domain": "onlyfans.com", "category": "Social"},
+    {"id": "youtube_memberships", "name": "YouTube Kanal Katıl", "domain": "youtube.com", "category": "Social"},
+
+    # --- LIFESTYLE, FOOD & E-COMMERCE ---
     {"id": "tinder_gold", "name": "Tinder Gold", "domain": "tinder.com", "category": "Lifestyle"},
     {"id": "bumble_premium", "name": "Bumble Premium", "domain": "bumble.com", "category": "Lifestyle"},
     {"id": "hinge_plus", "name": "Hinge+", "domain": "hinge.co", "category": "Lifestyle"},
     {"id": "grindr_unlimited", "name": "Grindr Unlimited", "domain": "grindr.com", "category": "Lifestyle"},
-    {"id": "linkedin_premium", "name": "LinkedIn Premium", "domain": "linkedin.com", "category": "Social"},
-    {"id": "x_premium", "name": "X Premium", "domain": "x.com", "category": "Social"},
-    {"id": "reddit_premium", "name": "Reddit Premium", "domain": "reddit.com", "category": "Social"},
-    {"id": "strava_premium", "name": "Strava Premium", "domain": "strava.com", "category": "Fitness"},
-    {"id": "komoot", "name": "Komoot Premium", "domain": "komoot.com", "category": "Fitness"},
-    {"id": "alltrails", "name": "AllTrails+", "domain": "alltrails.com", "category": "Fitness"},
     {"id": "uber_one", "name": "Uber One", "domain": "uber.com", "category": "Lifestyle"},
     {"id": "lyft_pink", "name": "Lyft Pink", "domain": "lyft.com", "category": "Lifestyle"},
     {"id": "instacart_plus", "name": "Instacart+", "domain": "instacart.com", "category": "Lifestyle"},
@@ -226,8 +231,17 @@ SERVICES = [
     {"id": "getir", "name": "Getir", "domain": "getir.com", "category": "Food"},
     {"id": "hellofresh", "name": "HelloFresh", "domain": "hellofresh.com", "category": "Food"},
     {"id": "blue_apron", "name": "Blue Apron", "domain": "blueapron.com", "category": "Food"},
+    {"id": "hepsiburada_premium", "name": "Hepsiburada Premium", "domain": "hepsiburada.com", "category": "Shopping"},
+    {"id": "trendyol_pass", "name": "Trendyol Pass", "domain": "trendyol.com", "category": "Shopping"},
+    {"id": "airbnb", "name": "Airbnb", "domain": "airbnb.com", "category": "Lifestyle"},
+    {"id": "booking_com", "name": "Booking.com", "domain": "booking.com", "category": "Lifestyle"},
+    {"id": "expedia", "name": "Expedia", "domain": "expedia.com", "category": "Lifestyle"},
+    {"id": "tripadvisor", "name": "Tripadvisor Plus", "domain": "tripadvisor.com", "category": "Lifestyle"},
+    {"id": "priority_pass", "name": "Priority Pass", "domain": "prioritypass.com", "category": "Lifestyle"},
+    {"id": "hopper", "name": "Hopper", "domain": "hopper.com", "category": "Lifestyle"},
+    {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"},
 
-    # --- CLOUD, DEV & HOSTING (40) ---
+    # --- CLOUD, DEV & HOSTING ---
     {"id": "icloud", "name": "iCloud+", "domain": "apple.com", "category": "Cloud"},
     {"id": "google_one", "name": "Google One", "domain": "google.com", "category": "Cloud"},
     {"id": "dropbox", "name": "Dropbox", "domain": "dropbox.com", "category": "Cloud"},
@@ -269,7 +283,7 @@ SERVICES = [
     {"id": "wix", "name": "Wix", "domain": "wix.com", "category": "Cloud"},
     {"id": "shopify", "name": "Shopify", "domain": "shopify.com", "category": "Lifestyle"},
 
-    # --- SECURITY & PRIVACY (25) ---
+    # --- SECURITY & PRIVACY ---
     {"id": "nordvpn", "name": "NordVPN", "domain": "nordvpn.com", "category": "Security"},
     {"id": "surfshark", "name": "Surfshark", "domain": "surfshark.com", "category": "Security"},
     {"id": "expressvpn", "name": "ExpressVPN", "domain": "expressvpn.com", "category": "Security"},
@@ -296,7 +310,7 @@ SERVICES = [
     {"id": "little_snitch", "name": "Little Snitch", "domain": "obdev.at", "category": "Security"},
     {"id": "cleanmymac", "name": "CleanMyMac X", "domain": "macpaw.com", "category": "Security"},
 
-    # --- EDUCATION & LEARNING (30) ---
+    # --- EDUCATION & LEARNING & NEWS ---
     {"id": "duolingo", "name": "Duolingo", "domain": "duolingo.com", "category": "Education"},
     {"id": "babbel", "name": "Babbel", "domain": "babbel.com", "category": "Education"},
     {"id": "busuu", "name": "Busuu", "domain": "busuu.com", "category": "Education"},
@@ -328,7 +342,7 @@ SERVICES = [
     {"id": "wired", "name": "Wired", "domain": "wired.com", "category": "News"},
     {"id": "hbr", "name": "Harvard Business Review", "domain": "hbr.org", "category": "News"},
 
-    # --- HEALTH, FITNESS & LIFESTYLE (25) ---
+    # --- HEALTH, FITNESS & APPLE BUNDLES ---
     {"id": "headspace", "name": "Headspace", "domain": "headspace.com", "category": "Health"},
     {"id": "calm", "name": "Calm", "domain": "calm.com", "category": "Health"},
     {"id": "insight_timer", "name": "Insight Timer", "domain": "insighttimer.com", "category": "Health"},
@@ -347,14 +361,13 @@ SERVICES = [
     {"id": "betterhelp", "name": "BetterHelp", "domain": "betterhelp.com", "category": "Health"},
     {"id": "talkspace", "name": "Talkspace", "domain": "talkspace.com", "category": "Health"},
     {"id": "zocdoc", "name": "Zocdoc", "domain": "zocdoc.com", "category": "Health"},
-    {"id": "airbnb", "name": "Airbnb", "domain": "airbnb.com", "category": "Lifestyle"},
-    {"id": "booking_com", "name": "Booking.com", "domain": "booking.com", "category": "Lifestyle"},
-    {"id": "expedia", "name": "Expedia", "domain": "expedia.com", "category": "Lifestyle"},
-    {"id": "tripadvisor", "name": "Tripadvisor Plus", "domain": "tripadvisor.com", "category": "Lifestyle"},
-    {"id": "priority_pass", "name": "Priority Pass", "domain": "prioritypass.com", "category": "Lifestyle"},
-    {"id": "hopper", "name": "Hopper", "domain": "hopper.com", "category": "Lifestyle"},
-    {"id": "kayak", "name": "KAYAK", "domain": "kayak.com", "category": "Lifestyle"}
+    {"id": "strava_premium", "name": "Strava Premium", "domain": "strava.com", "category": "Fitness"},
+    {"id": "komoot", "name": "Komoot Premium", "domain": "komoot.com", "category": "Fitness"},
+    {"id": "alltrails", "name": "AllTrails+", "domain": "alltrails.com", "category": "Fitness"},
+    {"id": "apple_fitness", "name": "Apple Fitness+", "domain": "apple.com", "category": "Health"},
+    {"id": "apple_one", "name": "Apple One", "domain": "apple.com", "category": "Bundle"}
 ]
+
 class VectorLogoEngine:
     def __init__(self):
         self.session = requests.Session()
@@ -439,7 +452,6 @@ class VectorLogoEngine:
                 ("Logo.dev (JPG)", f"https://img.logo.dev/{domain}?token={LOGO_DEV_TOKEN}&format=jpg&size=512")
             ] + sources
             
-        # En alt kalitedeki son çareler
         sources += [
             ("Clearbit API", f"https://logo.clearbit.com/{domain}?size=512"),
             ("HTML Scraper", get_lazy_html),
@@ -473,30 +485,48 @@ class VectorLogoEngine:
         return None, None
 
     def find_cancel_page(self, name, domain):
+        """YENİ: Google Arama Motorunu kullanarak iptal sayfalarını tespit eder."""
         try:
-            url = "https://lite.duckduckgo.com/lite/"
-            data = {"q": f"how to cancel {name} subscription site:{domain}"}
-            headers = self.headers.copy()
-            headers['Referer'] = 'https://lite.duckduckgo.com/'
-            headers['Origin'] = 'https://lite.duckduckgo.com'
+            # Aramayı URL formatına çeviriyoruz
+            query = urllib.parse.quote(f"how to cancel {name} subscription site:{domain}")
+            url = f"https://www.google.com/search?q={query}&hl=en"
+            
+            # Google'a kendimizi gerçek bir Chrome tarayıcı gibi tanıtıyoruz
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5'
+            }
 
-            res = self.session.post(url, headers=headers, data=data, timeout=10)
+            res = self.session.get(url, headers=headers, timeout=10)
+            
             if res.status_code == 200:
                 soup = BeautifulSoup(res.text, 'html.parser')
-                for a in soup.find_all('a', class_='result-url'):
-                    href = a.get('href', '')
-                    if 'uddg=' in href:
-                        parsed_url = urllib.parse.urlparse(href)
-                        query_params = urllib.parse.parse_qs(parsed_url.query)
-                        if 'uddg' in query_params:
-                            real_url = query_params['uddg'][0]
-                            if domain in real_url:
-                                return real_url
-                    elif domain in href:
-                        return href.strip()
-        except:
+                
+                # Google sonuçlarındaki tüm tıklanabilir linkleri tarıyoruz
+                for a in soup.find_all('a', href=True):
+                    href = a['href']
+                    
+                    # Eğer link aradığımız şirketin domainini içeriyorsa ve google'ın kendi linki değilse
+                    if domain in href and "google.com" not in href:
+                        
+                        # Google bazen linkleri /url?q=... içine gizler, onu temizliyoruz
+                        if href.startswith('/url?q='):
+                            clean_url = href.split('/url?q=')[1].split('&')[0]
+                            clean_url = urllib.parse.unquote(clean_url)
+                            if domain in clean_url:
+                                return clean_url
+                                
+                        # Eğer doğrudan açık link verdiyse
+                        elif href.startswith('http'):
+                            return href
+                            
+        except Exception as e:
             pass
+            
+        # Hiçbir şey bulamazsa manuel Google arama linki bırak (Kırık link olmaması için)
         return f"https://www.google.com/search?q=how+to+cancel+{urllib.parse.quote(name)}+subscription"
+
 
 def main():
     if not LOGO_DEV_TOKEN:
@@ -506,7 +536,7 @@ def main():
     logo_dir = "logos"
     if not os.path.exists(logo_dir): os.makedirs(logo_dir)
 
-    print("🚀 Scraper Started (Ultra Quality)")
+    print("🚀 Scraper Started (Ultra Quality Logos + Google Scraper)")
 
     logos_catalog = {
         "lastUpdated": datetime.now().isoformat(),
@@ -569,7 +599,8 @@ def main():
             "cancelUrl": cancel_url
         })
         
-        time.sleep(1.5) 
+        # Google'dan IP ban (Rate Limit / Captcha) yememek için 3.5 saniye bekleme süresi!
+        time.sleep(3.5) 
 
     with open('logos_catalog.json', 'w', encoding='utf-8') as f:
         json.dump(logos_catalog, f, indent=2, ensure_ascii=False)
@@ -578,7 +609,5 @@ def main():
 
     print("\n🏁 İşlem Tamamlandı!")
 
-if __name__ == "__main__":
-    main()
 if __name__ == "__main__":
     main()
